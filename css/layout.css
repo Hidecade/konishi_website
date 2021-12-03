@@ -681,9 +681,9 @@ p.footer-address{
 
 @media screen and (max-width:700px){
 	
-	h1{ font-size:2.0rem; }
+	h1{ font-size:2.0rem; font-family: myfont;}
 	
-	h2{ font-size:1.9rem; }
+	h2{ font-size:1.9rem;  font-family: myfont;}
 	
 	h3{ font-size:1.2rem; }
 	
