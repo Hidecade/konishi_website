@@ -679,14 +679,9 @@ p.footer-address{
 
 @media screen and (max-width:700px){
 	
-	h1, h2, h3, h4, h5, a, p, th, td, ul, li, a, address{
-		color:#000000;
-		font-family: myfont; 
-	}
+	h1{ font-size:2.0rem; font-weight: 300; }
 	
-	h1{ font-size:2.0rem; }
-	
-	h2{ font-size:1.9rem; }
+	h2{ font-size:1.9rem; font-weight: 300; }
 	
 	h3{ font-size:1.2rem; }
 	
