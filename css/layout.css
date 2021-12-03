@@ -1,0 +1,699 @@
+@charset "utf-8";
+
+/*========= フォントの設定 ===============*/
+@font-face {
+    font-family: myfont; 
+    src: url(../font/mplus-1p-light.woff); 
+}
+@font-face {
+    font-family: myfont-thin; 
+    src: url(../font/mplus-1p-thin.woff); 
+}
+
+h1, h2, h3, h4, h5, a, p, th, td, ul, li, a, address{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	text-decoration: none;
+	font-weight:normal;
+	font-style: normal;
+	vertical-align: middle;
+	text-align: center;
+	color:#202020;
+	font-size:1.0rem;
+	line-height: 1.8rem;
+	list-style-type: none;
+	}
+
+p{
+	text-align: left;
+}
+
+img	{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	display: block; 
+	}
+
+table{
+	margin: 0px;
+	padding: 0px;
+}
+
+em{	color: #FF9417; 
+	font-style: normal;
+}
+
+body	{
+	margin: 0px;
+	padding: 0px;
+	border:none;
+	font-family: myfont, 'HGPｺﾞｼｯｸM';
+	background: #FFFFFF;
+  	text-align: center;
+	-webkit-text-size-adjust: 100%;
+}
+
+footer{
+	display:block;
+}
+
+/*===================================
+　基本レイアウトのための文字設定
+===================================*/
+
+h1{
+	float:none;
+	font-family: myfont-thin, 'HGPｺﾞｼｯｸM';
+	font-size:2.6rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 40px 0 30px 0;
+}
+
+h2{
+	float:none;
+	font-family: myfont-thin, 'HGPｺﾞｼｯｸM';
+	font-size:2.4rem;
+	color:#202020;
+	text-align: center;
+	margin: 35px 0 35px 0;
+}
+
+h3{
+	font-family: myfont, 'HGPｺﾞｼｯｸM';
+	font-size:1.5rem;
+	color:#505050;
+	text-align: center;
+	margin: 40px 0 15px 0;
+}
+
+h4{
+	font-family: myfont, 'HGPｺﾞｼｯｸM';
+	font-size:1.1rem;
+	color: #FF9417; 
+	text-align: center;
+}
+
+table{
+	margin-top:20px;
+}
+
+
+th {
+	font-size:1.0rem;
+	border-bottom: 1px solid #E0E0E0;
+	line-height: 2rem;
+}
+td {
+	font-size:1.0rem;
+	border-bottom: 1px solid #E0E0E0;
+	line-height: 2rem;
+	width:30px
+}
+
+main{
+	padding: 46px 0px 0px 0px;
+}
+
+section{
+	position:relative;
+	padding: 10px 5% 20px 5%;
+	margin:0px auto;	
+}
+
+section:nth-child(2n+1){
+	background:#f8f8f8;	
+}
+
+table.table_30 {
+	width: 90%;
+	//min-width: 250px;
+	margin: 0px auto;
+	text-align: center;
+	border-spacing: 0;
+	
+}
+
+/*===================================
+　クラス定義
+===================================*/
+
+.contents_1008px{
+	max-width :1008px;
+	margin: 0px auto;	
+}
+
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.center{
+	text-align: center;
+}
+
+.left{
+	text-align: left;
+	margin:0px 10px;
+}
+
+.orange{	
+	color: #FF9417; 
+}
+
+.list_left{
+	margin-left: 8%;
+}
+
+.list_left	li{
+	text-align: left;
+	line-height: 26px;
+	list-style-type: disc;
+}
+
+.flexContainer{
+	display: flex;
+	justify-content:space-between;
+	//align-items: flex-start;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.flex_row_reverse{ flex-direction: row-reverse;　}
+
+img.img_small{  width: 100%; display: none; }
+
+img.img_normal{ width: 100%; display: block; }
+
+.img_center {width: 100%; border-radius: 10px; }
+
+.img_container{ width: 40%; margin: 0px; border: 0px; }
+
+.img_container img{ width: 100%; border-radius: 10px; }
+
+.txt_container_center{ width: 100%; border-radius: 10px; padding: 10px; }
+
+.txt_container{        width:  55%; border-radius: 10px; padding: 10px; }
+
+.back_white{ background-color: #FFFFFF; }
+
+.back_gray{  background-color: #f8f8f8; }
+
+/*700px以下の場合の設定（携帯サイト用）*/
+@media screen and (max-width:700px){
+
+	.flexContainer{ display: block; justify-content: center; }
+	
+	.img_container{  width: 100%; margin-top: 20px; }
+	
+	.txt_container_center{ width: 100%; padding: 5px 0px; margin-top: 10px; } 
+	
+	.txt_container{ width: 100%; padding: 5px 0px; margin-top: 10px; }
+	
+	img.img_small{ display: block; }
+	
+	img.img_normal{ display: none; }
+}
+
+
+
+/*===================================
+　グローバルナビゲーション
+===================================*/
+#header{
+	height: 46px;
+	width:100%;
+	align-items: center;
+	background:#404040;
+	position:absolute;
+	top: 0px;
+    z-index: 1;
+	float: left;
+}
+
+#g_navi ul{
+	max-width: 800px;
+	margin: auto;
+	display: flex;
+	justify-content:space-around;
+
+}
+
+#g_navi ul li a{
+	display: flex;
+	color: #ffffff;
+	padding:0px 15px;
+	height: 46px;
+	//transition:all .3s;
+	font-size: 13px;
+	align-items: center;
+}
+
+#g_navi ul li.current a,
+#g_navi ul li a:hover{
+  color:#f0a000; 
+}
+
+/*ウィンドウのサイズが小さくなった場合メニューを見えなくする（携帯サイト）*/
+#g_navi.dnone a{
+	
+	display: none;	/* カーソルが反応しないように */
+	opacity: 0;
+}
+
+/*メニューボタンをクリックした場合（携帯サイト）*/
+#g_navi.dnone.panelactive{
+	background:#404040;
+	/*固定位置にして最背面に*/
+	position:fixed; 
+	top: 0;
+	left: 0; 
+	width:100%;
+	height: 100vh;
+}
+
+#g_navi.dnone.panelactive ul{
+  color: #ffffff;
+  padding:60px 50px 30px 50px;
+  display: block;
+  //transition:all 0.3s;
+}
+
+#g_navi.dnone.panelactive li{
+  opacity: 1;
+  display: block;
+  height: 46px;
+  padding:0px 10px 0px 10px;
+  letter-spacing: 0.4em;
+  border-bottom: 1px solid #909090;
+}
+
+#g_navi.dnone.panelactive a{
+	display: flex;	
+	opacity: 1;
+	font-size: 1.1rem;
+	justify-content: center;
+}
+
+#logo_konishi{
+	opacity:0;　/* 幅768以下のメニューのところにlogo_konishiを非表示 */
+	justify-content: center;
+	position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 2;
+}
+
+/*===================================
+　サブメニュー
+===================================*/
+#header_sub_menu{
+	max-width :1008px;
+	height: 40px;
+	width: 90%;						/* 左右5%の余白に設定 */
+	background-color: #FFFFFF;
+	margin:30px auto 0px auto;				/* メニューは常にセンター */
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#header_sub_menu h2{
+	display: flex;
+	text-align: center;
+	float:left;
+	font-size: 2rem;
+	color: #202020;	
+	padding: 6px 0px 3px 10px;
+	margin: 0px;
+}
+
+.sub_menu_box{
+	margin-top: 10px;
+	float:right;
+	width: 70%;
+	max-width :600px;
+}
+
+#sub_menu ul{
+	display: flex;
+}
+#sub_menu li{
+	flex-grow: 1;
+	justify-content:space-between
+	line-height: 1rem;
+}
+
+#sub_menu a{
+	font-size: 0.8rem;
+	color: #303030;
+	width:100%;
+	display: block;　
+}
+
+#sub_menu ul li.current a{
+  color:#303030; 
+  background-color: #F0F0F0;
+}
+#sub_menu a:hover{
+	color:#000000; 
+  //color:#FF9417; 
+}
+#sub_menu li:hover{
+  background-color: #F0F0F0;
+}
+
+/*700px以下の場合の設定（携帯サイト用）*/
+@media screen and (max-width:700px){
+	#header_sub_menu{
+		height: 258px;
+	}
+	
+	#header_sub_menu h2{
+		display:block;
+		float:none;
+		font-size: 1.8rem;
+		padding-bottom: 6px;
+		border-bottom: 1px solid #c0c0c0;
+	}
+	
+	.sub_menu_box{
+		margin-top: 0;
+		float:none;
+		margin: auto;
+		width: 100%;
+		max-width :none;
+	}
+	
+	#sub_menu ul{
+		display: block;
+		height: 0px;
+		margin: 0px;
+	}
+	#sub_menu a{
+		line-height:  2.2rem;
+	}
+	
+	#sub_menu li + li {
+		border-top: 1px solid #b0b0b0;
+	}
+	
+}
+
+/*===================================
+　フッターメニュー
+===================================*/
+#footer_navi{
+	margin: auto;
+	max-width :600px;
+	padding: 20px 0px;
+	width: 90%;						/* 左右5%の余白に設定 */
+	
+}
+#footer_navi ul{
+	display: flex;
+}
+#footer_navi li{
+	flex-grow: 1;
+	justify-content: space-between;
+	line-height:  0.75rem;
+}
+#footer_navi a{
+	color:#202020;
+	font-size: 0.75rem;
+	line-height:  0.75rem;
+	display: block;　
+	
+}
+#footer_navi li + li {
+  border-left: 1px solid #b0b0b0;
+}
+
+#footer_navi a:hover{
+	color:#000000; 
+  //color:#FF9417; 
+}
+#footer_navi li:hover{
+  background-color: #F0F0F0;
+}
+
+/*700px以下の場合の設定（携帯サイト用）*/
+@media screen and (max-width:700px){
+	
+	#footer_navi{
+		width: 90%;
+	}
+	
+	#footer_navi ul{
+	  border-top: 1px solid #c0c0c0;
+	  border-bottom: 1px solid #c0c0c0;
+		display: block;
+	}
+	
+	#footer_navi li{
+		margin: auto;
+	}
+	
+	#footer_navi a{
+		line-height:  2.0rem;
+		font-size:0.7rem;
+	}
+	
+	#footer_navi li + li {
+	  border-left: 0px solid #c0c0c0;
+	  border-top: 1px solid #c0c0c0;
+	}
+	
+}
+
+/*===================================
+　フッター
+===================================*/
+
+#footer{
+	padding: 8px 18px;
+	background-color: #FFFFFF;
+	text-align: center;
+	border-top: 1px solid #c0c0c0;
+	
+}
+.footer-logo img{
+	display:block;
+	margin: 20px auto;
+}
+
+
+small{
+	color:#202020;
+	display:block;
+	text-align: center;
+	line-height: 1.4rem;
+	font-size:0.75rem;
+}
+
+address{
+	display: flex;
+	justify-content: center;
+}
+p.footer-address{
+	color: #202020;
+	font-size: 0.75rem;
+	line-height: 1.0rem;
+	text-align: center;
+	margin: 0px 10px;
+}
+
+/*700px以下の場合の設定（携帯サイト用）*/
+@media screen and (max-width:700px){
+	#footer_navi{
+		width: 100%;
+		width: 90%;
+	}
+	
+	#footer_navi ul{
+	  border-top: 1px solid #c0c0c0;
+	  border-bottom: 1px solid #c0c0c0;
+		display: block;
+	}
+	
+	#footer_navi li{
+		line-height:  2.2rem;
+		margin: auto;
+	}
+	
+	#footer_navi a{
+		font-size:0.7rem;
+	}
+	
+	#footer_navi li + li {
+	  border-left: 0px solid #c0c0c0;
+	  border-top: 1px solid #c0c0c0;
+	}
+}
+
+	
+/*===================================
+　Pgae Top
+===================================*/
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:#404040;
+	/*border-radius: 40px;*/
+	width: 80px;
+	height: 60px;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+    border:1px solid #ffffff;
+	font-size:1.0rem;
+	transition:all 0.3s;
+}
+
+#page-top a:hover{
+  background: #FF9417;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+    /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(140px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove{
+  animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(140px);
+  }
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove{
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+    opacity: 1;
+  transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+  transform: translateY(140px);
+  }
+}
+
+
+
+/*===================================
+　MENUボタンの設定（携帯サイト用）
+===================================*/
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn{
+	opacity: 0;
+	display:none;
+	position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+	background:#404040;
+	cursor: pointer;
+	width: 46px;
+	height:46px;
+	float:left;
+	z-index:5;
+}
+
+.openbtn.openMenu{
+	opacity: 1;　/* 幅768以下になったらメニューボタンを表示 */
+}
+
+/*ボタン内側*/
+.openbtn span{
+	display: inline-block;
+	transition: all .4s;/*アニメーションの設定*/
+	position: absolute;
+	left: 14px;
+	height: 1px;
+	border-radius: 2px;
+	background: #fff;
+	width: 40%;
+}
+
+.openbtn span:nth-of-type(1) {
+	top:15px; 
+}
+
+.openbtn span:nth-of-type(2) {
+	top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:31px;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu表記をしている2つ目の要素が透過して消える*/	
+.openbtn.active{
+	z-index:255;/*最前面に*/
+}
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+/*===================================
+　768px以下の場合の設定（携帯サイト用）
+===================================*/
+
+@media screen and (max-width:700px){
+	
+	h1{ font-size:2.0rem; }
+	
+	h2{ font-size:1.9rem; }
+	
+	h3{ font-size:1.2rem; }
+	
+	#logo_konishi{ opacity: 1; }	
+	
+	#logo_konishi.logoactive{ opacity: 0; }
+	
+	.openbtn{ display:block; }
+	
+	.list_left{ margin-left: 30px; }
+	
+	address{ display: block; }
+}
