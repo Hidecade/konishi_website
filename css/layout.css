@@ -59,7 +59,6 @@ footer{
 ===================================*/
 
 h1{
-	font-family: 'M PLUS 1p', sans-serif;
 	font-weight: 100;
 	float:none;
 	font-size:2.6rem;
@@ -70,7 +69,6 @@ h1{
 }
 
 h2{
-	font-family: 'M PLUS 1p', sans-serif;
 	font-weight: 100;
 	float:none;
 	font-size:2.4rem;
@@ -79,7 +77,6 @@ h2{
 }
 
 h3{
-	font-family: 'M PLUS 1p', sans-serif;
 	font-weight: 300;
 	font-size:1.5rem;
 	color:#404040;
@@ -88,8 +85,6 @@ h3{
 }
 
 h4{
-	font-family: 'M PLUS 1p', sans-serif;
-	font-weight: 300;
 	font-size:1.1rem;
 	color: #FF9417; 
 	text-align: center;
