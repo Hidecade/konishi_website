@@ -13,7 +13,9 @@ h1, h2, h3, h4, h5, a, p, th, td, ul, li, a, address{
 	font-style: normal;
 	vertical-align: middle;
 	text-align: center;
-	color:#101010;
+	font-family: 'M PLUS 1p', sans-serif;
+	font-weight: 300;
+	color:#202020;
 	font-size:1.0rem;
 	line-height: 1.8rem;
 	list-style-type: none;
@@ -40,8 +42,6 @@ em{	color: #FF9417;
 }
 
 body	{
-	font-family: 'M PLUS 1p', sans-serif;
-	font-weight: 300;
 	margin: 0px;
 	padding: 0px;
 	border:none;
@@ -674,9 +674,9 @@ p.footer-address{
 
 @media screen and (max-width:700px){
 	
-	h1{ font-size:2.0rem; font-weight: 300; }
+	h1{ font-size:2.0rem; font-weight: 300; color:#303030; }
 	
-	h2{ font-size:1.9rem; font-weight: 300; }
+	h2{ font-size:1.9rem; font-weight: 300; color:#303030;}
 	
 	h3{ font-size:1.2rem; }
 	
