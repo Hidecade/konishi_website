@@ -680,8 +680,15 @@ p.footer-address{
 	h1, h2, h3, h4, h5, a, p, th, td, ul, li, a, address{
 		font-family: sans-serif;
 	}
-
 	
+	h1{ font-size:2.2rem; }
+
+	h2{ font-size:2.0rem; }
+
+	h3{ font-size:1.4rem; }
+
+	h4{ font-size:1.1rem; }
+
 	#logo_konishi{ opacity: 1; }	
 	
 	#logo_konishi.logoactive{ opacity: 0; }
