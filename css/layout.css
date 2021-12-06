@@ -326,7 +326,7 @@ img.img_normal{ width: 100%; display: block; }
 }
 
 .sub_menu_box{
-	margin-top: 10px;
+	margin-top: 11px;
 	float:right;
 	width: 70%;
 	max-width :600px;
@@ -363,6 +363,7 @@ img.img_normal{ width: 100%; display: block; }
 
 /*700px以下の場合の設定（携帯サイト用）*/
 @media screen and (max-width:700px){
+	
 	#header_sub_menu{
 		height: auto;
 		display: inline-block;
@@ -668,6 +669,8 @@ p.footer-address{
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
 }
+
+
 
 /*===================================
 　768px以下の場合の設定（携帯サイト用）
