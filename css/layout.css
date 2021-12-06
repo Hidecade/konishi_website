@@ -495,12 +495,18 @@ address{
 	display: flex;
 	justify-content: center;
 }
+
 p.footer-address{
 	color: #202020;
 	font-size: 0.75rem;
 	line-height: 1.0rem;
 	text-align: center;
 	margin: 0px 10px;
+}
+
+a[href^="tel:"]{
+	line-height: 1.0rem;
+	font-size: 0.75rem;
 }
 
 /*700px以下の場合の設定（携帯サイト用）*/
@@ -529,6 +535,12 @@ p.footer-address{
 	  border-left: 0px solid #c0c0c0;
 	  border-top: 1px solid #c0c0c0;
 	}
+}
+
+@media(min-width: 700){
+  a[href^="tel:"]{
+    pointer-events: none;
+  }
 }
 
 	
