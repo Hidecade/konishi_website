@@ -354,10 +354,11 @@ img.img_normal{ width: 100%; display: block; }
   color:#303030; 
   background-color: #F0F0F0;
 }
+
 #sub_menu a:hover{
 	color:#000000; 
-  //color:#FF9417; 
 }
+
 #sub_menu li:hover{
   background-color: #F0F0F0;
 }
@@ -365,7 +366,9 @@ img.img_normal{ width: 100%; display: block; }
 /*700px以下の場合の設定（携帯サイト用）*/
 @media screen and (max-width:700px){
 	#header_sub_menu{
-		height: 258px;
+		height: auto;
+		display: inline-block;
+		
 	}
 	
 	#header_sub_menu h2{
@@ -373,21 +376,18 @@ img.img_normal{ width: 100%; display: block; }
 		float:none;
 		font-size: 1.8rem;
 		padding-bottom: 6px;
-		border-bottom: 1px solid #c0c0c0;
 	}
 	
 	.sub_menu_box{
 		margin-top: 0;
-		float:none;
 		margin: auto;
 		width: 100%;
 		max-width :none;
+		border-top: 1px solid #b0b0b0;
 	}
 	
 	#sub_menu ul{
 		display: block;
-		height: 0px;
-		margin: 0px;
 	}
 	#sub_menu a{
 		line-height:  2.2rem;
@@ -444,8 +444,8 @@ img.img_normal{ width: 100%; display: block; }
 	}
 	
 	#footer_navi ul{
-	  border-top: 1px solid #c0c0c0;
-	  border-bottom: 1px solid #c0c0c0;
+	  	border-top: 1px solid #c0c0c0;
+	  	border-bottom: 1px solid #c0c0c0;
 		display: block;
 	}
 	
