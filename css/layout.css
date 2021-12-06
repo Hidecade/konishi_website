@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*========= フォントの設定 ===============*/
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400&display=swap');
 
 
 h1, h2, h3, h4, h5, a, p, th, td, ul, li, a, address{
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, a, p, th, td, ul, li, a, address{
 	font-size:1.0rem;
 	line-height: 1.8rem;
 	list-style-type: none;
-	}
+}
 
 p{
 	text-align: left;
@@ -30,7 +30,7 @@ img	{
 	padding: 0px;
 	border: 0px;
 	display: block; 
-	}
+}
 
 table{
 	margin: 0px;
@@ -41,7 +41,7 @@ em{	color: #FF9417;
 	font-style: normal;
 }
 
-body	{
+body {
 	margin: 0px;
 	padding: 0px;
 	border:none;
@@ -171,7 +171,6 @@ table.table_30 {
 .flexContainer{
 	display: flex;
 	justify-content:space-between;
-	//align-items: flex-start;
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
@@ -271,19 +270,18 @@ img.img_normal{ width: 100%; display: block; }
 }
 
 #g_navi.dnone.panelactive ul{
-  color: #ffffff;
-  padding:60px 50px 30px 50px;
-  display: block;
-  //transition:all 0.3s;
+	color: #ffffff;
+	padding:60px 50px 30px 50px;
+	display: block;
 }
 
 #g_navi.dnone.panelactive li{
-  opacity: 1;
-  display: block;
-  height: 46px;
-  padding:0px 10px 0px 10px;
-  letter-spacing: 0.4em;
-  border-bottom: 1px solid #909090;
+	opacity: 1;
+	display: block;
+	height: 46px;
+	padding:0px 10px 0px 10px;
+	letter-spacing: 0.4em;
+	border-bottom: 1px solid #909090;
 }
 
 #g_navi.dnone.panelactive a{
@@ -351,8 +349,8 @@ img.img_normal{ width: 100%; display: block; }
 }
 
 #sub_menu ul li.current a{
-  color:#303030; 
-  background-color: #F0F0F0;
+	color:#303030; 
+	background-color: #F0F0F0;
 }
 
 #sub_menu a:hover{
@@ -360,7 +358,7 @@ img.img_normal{ width: 100%; display: block; }
 }
 
 #sub_menu li:hover{
-  background-color: #F0F0F0;
+ 	background-color: #F0F0F0;
 }
 
 /*700px以下の場合の設定（携帯サイト用）*/
@@ -425,12 +423,11 @@ img.img_normal{ width: 100%; display: block; }
 	
 }
 #footer_navi li + li {
-  border-left: 1px solid #b0b0b0;
+ 	border-left: 1px solid #b0b0b0;
 }
 
 #footer_navi a:hover{
 	color:#000000; 
-  //color:#FF9417; 
 }
 #footer_navi li:hover{
   background-color: #F0F0F0;
@@ -553,50 +550,50 @@ p.footer-address{
 }
 
 #page-top a:hover{
-  background: #FF9417;
+	background: #FF9417;
 }
 
 /*リンクを右下に固定*/
 #page-top {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 2;
-    /*はじめは非表示*/
-  opacity: 0;
-  transform: translateY(140px);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 2;
+	/*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(140px);
 }
 
 /*　上に上がる動き　*/
 
 #page-top.UpMove{
-  animation: UpAnime 0.5s forwards;
+ 	animation: UpAnime 0.5s forwards;
 }
 @keyframes UpAnime{
-  from {
-    opacity: 0;
-  transform: translateY(140px);
-  }
-  to {
-    opacity: 1;
-  transform: translateY(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(140px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 /*　下に下がる動き　*/
 
 #page-top.DownMove{
-  animation: DownAnime 0.5s forwards;
+ 	animation: DownAnime 0.5s forwards;
 }
 @keyframes DownAnime{
-  from {
-    opacity: 1;
-  transform: translateY(0);
-  }
-  to {
-    opacity: 1;
-  transform: translateY(140px);
-  }
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(140px);
+	}
 }
 
 
