@@ -383,6 +383,9 @@ img.img_normal{ width: 100%; display: block; }
 		max-width :none;
 		border-top: 1px solid #b0b0b0;
 	}
+	#sub_menu a{
+		font-weight: 400;
+	}
 	
 	#sub_menu ul{
 		display: block;
@@ -452,9 +455,10 @@ img.img_normal{ width: 100%; display: block; }
 	
 	#footer_navi a{
 		line-height:  2.0rem;
-		font-size:0.7rem;
+		font-size:0.8rem;
+		font-weight: 400;
 	}
-	
+
 	#footer_navi li + li {
 	  border-left: 0px solid #c0c0c0;
 	  border-top: 1px solid #c0c0c0;
@@ -671,11 +675,14 @@ p.footer-address{
 
 @media screen and (max-width:700px){
 	
+	h1, h2, h3, h4, p, li, td, em{ font-weight: 400; }
+	
 	h1{ font-size:2.0rem; font-weight: 300; color:#303030; }
 	
 	h2{ font-size:1.9rem; font-weight: 300; color:#303030;}
 	
-	h3{ font-size:1.2rem; }
+	h3{ font-size:1.3rem; font-weight: 400; }
+	
 	
 	#logo_konishi{ opacity: 1; }	
 	
