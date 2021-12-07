@@ -697,15 +697,15 @@ a[href^="tel:"]{
 
 @media screen and (max-width:700px){
 	
-	h1, h2, h3, h4, h5, a, p, th, td, ul, li, a, address{
-		font-family: sans-serif;
+	h4, h5, a, p, th, td, ul, li, a, address{
+	    font-family: sans-serif;
 	}
 	
-	h1{ font-size:2.2rem; }
+	h1{ font-size:2.2rem; font-weight:300;}
 
-	h2{ font-size:2.0rem; }
+	h2{ font-size:2.0rem; font-weight:300; }
 
-	h3{ font-size:1.4rem; }
+	h3{ font-size:1.4rem; font-weight:300; }
 
 	h4{ font-size:1.1rem; }
 
