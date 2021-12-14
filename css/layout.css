@@ -103,6 +103,7 @@ h3{
 	margin: 40px 0 15px 0;
 }
 
+
 h4{
 	font-size:1.1rem;
 	color: #FF9417; 
@@ -170,7 +171,11 @@ table.table_30 {
 
 .left{
 	text-align: left;
-	margin:0px 10px;
+	margin:5px 10px;
+}
+
+h4.left{
+	margin-top:15px;
 }
 
 .orange{	
@@ -193,9 +198,16 @@ table.table_30 {
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
+	margin:20px 0px; 
 }
 
-.flex_row_reverse{ flex-direction: row-reverse;　}
+.width_15{ width: 15%; }
+.width_20{ width: 20%; }
+.width_30{ width: 30%; }
+.width_40{ width: 40%; }
+.width_50{ width: 50%; }
+
+.flex_row_reverse{ flex-direction: row-reverse;}
 
 img.img_small{  width: 100%; display: none; }
 
@@ -215,7 +227,7 @@ img.img_normal{ width: 100%; display: block; }
 
 .img_container_55 img{ width: 100%; border-radius: 10px; }
 
-.txt_container_center{ width: 100%; border-radius: 10px; margin:15px 0px; padding: 10px 10px; }
+.txt_container_center{ width: 100%; border-radius: 10px; padding: 10px 30px; }
 
 .txt_container_40{ width:  40%; border-radius: 10px; padding: 10px; }
 
@@ -223,9 +235,11 @@ img.img_normal{ width: 100%; display: block; }
 
 .txt_container_55{ width:  55%; border-radius: 10px; padding: 10px; }
 
+
 .back_white{ background-color: #FFFFFF; }
 
 .back_gray{  background-color: #f8f8f8; }
+
 
 /*700px以下の場合の設定（携帯サイト用）*/
 @media screen and (max-width:700px){
@@ -238,7 +252,7 @@ img.img_normal{ width: 100%; display: block; }
 	
 	.img_container_55{  width: 100%; margin-top: 20px; }
 	
-	.txt_container_center{ width: 100%; padding: 5px 0px; margin-top: 10px; } 
+	.txt_container_center{ width: 100%; padding: 5px 0px; margin:10px 0px; } 
 	
 	.txt_container_40{ width: 100%; padding: 5px 0px; margin-top: 10px; }
 	
