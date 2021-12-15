@@ -250,6 +250,7 @@ img.img_normal{ width: 100%; display: block; }
 
 .back_gray{  background-color: #f8f8f8; }
 
+.link{ color:cornflowerblue; text-decoration:underline;}
 
 /*700px以下の場合の設定（携帯サイト用）*/
 @media screen and (max-width:700px){
@@ -274,11 +275,11 @@ img.img_normal{ width: 100%; display: block; }
 	
 	img.img_normal{ display: none; }
 	
-	.table_small td{ font-size: 0.6rem;}
+	.table_small td{ font-size: 0.7rem;}
 	
-	.table_small th{ font-size: 0.6rem;}
+	.table_small th{ font-size: 0.7rem;}
 	
-	p.small{ font-size: 0.6rem;}
+	p.small{ font-size: 0.7rem;}
 }
 
 
@@ -574,7 +575,7 @@ p.footer-address{
 	margin: 0px 10px;
 }
 
-a[href^="tel:"]{
+.footer-address a[href^="tel:"]{
 	line-height: 1.0rem;
 	font-size: 0.75rem;
 }
