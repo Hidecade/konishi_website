@@ -274,11 +274,11 @@ img.img_normal{ width: 100%; display: block; }
 	
 	img.img_normal{ display: none; }
 	
-	.table_small td{ font-size: 0.6rem;}
+	.table_small td{ font-size: 0.3rem;}
 	
-	.table_small th{ font-size: 0.6rem;}
+	.table_small th{ font-size: 0.3rem;}
 	
-	p.small{ font-size: 0.6rem;}
+	p.small{ font-size: 0.3rem;}
 }
 
 
