@@ -828,6 +828,10 @@ p.footer-address{
 	text-align: right;
 }
 
+@media screen and (max-width:700px){
+	#title h5{ font-weight: 300; }
+	#title h6{ font-weight: 400; }
+}
 
 
 /*===================================
