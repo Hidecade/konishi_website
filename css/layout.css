@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400&display=swap');
 
 
-h1, h2, h3, h4, h5, a, p, th, td, ul, li, a, address{
+h1, h2, h3, h4, h5, h6, a, p, th, td, ul, li, a, address{
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
@@ -40,6 +40,7 @@ iframe{
 table{
 	margin: 0px;
 	padding: 0px;
+	border-spacing: 0px;
 }
 
 em{	color: #FF9417; 
@@ -100,7 +101,7 @@ h3{
 	font-weight: 100;
 	font-size:2.0rem;
 	text-align: center;
-	margin: 40px 0 15px 0;
+	margin: 30px 0 15px 0;
 }
 
 
@@ -108,6 +109,14 @@ h4{
 	font-size:1.1rem;
 	color: #FF9417; 
 	text-align: center;
+}
+
+h5{
+	font-weight: 100;
+}
+
+h6{
+	font-weight: 300;
 }
 
 table{
@@ -141,21 +150,17 @@ section:nth-child(2n+1){
 	background:#f8f8f8;	
 }
 
-table.table_90 {
-	width: 90%;
-	margin: 0px auto;
-	text-align: center;
-	border-spacing: 0;
-	
+table.consultation {
+	width: 95%;
+	margin: 0 auto;
+	padding: 10px;
 }
 
-table.table_100 {
-	width: 100%;
-	margin: 0px auto;
-	text-align: center;
-	border-spacing: 0;
-	
+td.consultation_rest {
+	background-color: #E0E0E0E0;
 }
+
+
 
 /*===================================
 　クラス定義
@@ -163,6 +168,11 @@ table.table_100 {
 
 .contents_1008px{
 	max-width :1008px;
+	margin: 0px auto;	
+}
+
+.contents_1280px{
+	max-width :1280px;
 	margin: 0px auto;	
 }
 
@@ -190,13 +200,27 @@ h4.left{
 }
 
 .list_left{
-	margin-left: 8%;
+	margin: 0% 5% 0% 7%;
 }
 
 .list_left	li{
 	text-align: left;
 	line-height: 26px;
 	list-style-type: disc;
+}
+
+table.width_90 {
+	width: 90%;
+	margin: 0px auto;	
+}
+
+table.width_100 {
+	width: 100%;
+	margin: 0px auto;	
+}
+
+.contents_1008px img	{
+	width: 100%; 
 }
 
 .flexContainer{
@@ -208,7 +232,12 @@ h4.left{
 	margin:20px 0px; 
 }
 
+.flexContainer img{
+	border-radius: 10px;
+}
+
 .width_8_5{ width: 8.5%; }
+.width_10{ width: 10%; }
 .width_15{ width: 15%; }
 .width_20{ width: 20%; }
 .width_25{ width: 25%; }
@@ -223,21 +252,17 @@ img.img_small{  width: 100%; display: none; }
 
 img.img_normal{ width: 100%; display: block; }
 
-.img_center {width: 100%; border-radius: 10px; }
+.img_center {width: 100%; border-radius: 10px;}
+
+.img_container_30{ width: 30%; margin: 0px; border: 0px; }
 
 .img_container_40{ width: 40%; margin: 0px; border: 0px; }
 
-.img_container_40 img{ width: 100%; border-radius: 10px; }
-
 .img_container_47{ width: 47%; margin: 0px; border: 0px; }
-
-.img_container_47 img{ width: 100%; border-radius: 10px; }
 
 .img_container_55{ width: 55%; margin: 0px; border: 0px; }
 
-.img_container_55 img{ width: 100%; border-radius: 10px; }
-
-.txt_container_center{ width: 100%; border-radius: 10px; padding: 10px 30px; }
+.txt_container_center{ width: 100%; border-radius: 10px; padding: 10px 30px 10px 30px; }
 
 .txt_container_40{ width:  40%; border-radius: 10px; padding: 10px; }
 
@@ -245,6 +270,7 @@ img.img_normal{ width: 100%; display: block; }
 
 .txt_container_55{ width:  55%; border-radius: 10px; padding: 10px; }
 
+.txt_container_60{ width:  60%; border-radius: 10px; padding: 10px; }
 
 .back_white{ background-color: #FFFFFF; }
 
@@ -256,6 +282,8 @@ img.img_normal{ width: 100%; display: block; }
 @media screen and (max-width:700px){
 
 	.flexContainer{ display: block; justify-content: center; }
+	
+	.img_container_30{  width: 100%; margin-top: 20px; }
 	
 	.img_container_40{  width: 100%; margin-top: 20px; }
 	
@@ -271,6 +299,8 @@ img.img_normal{ width: 100%; display: block; }
 	
 	.txt_container_55{ width: 100%; padding: 5px 0px; margin-top: 10px; }
 	
+	.txt_container_60{ width: 100%; padding: 5px 0px; margin-top: 10px; }
+	
 	img.img_small{ display: block; }
 	
 	img.img_normal{ display: none; }
@@ -280,9 +310,13 @@ img.img_normal{ width: 100%; display: block; }
 	.table_small th{ font-size: 0.6rem;}
 	
 	p.small{ font-size: 0.6rem;}
+	
+	table.consultation { width: 100%; padding: 10px 0px; }
+	.consultation td{ font-size: 0.8rem;}
+	.consultation th{ font-size: 0.8rem;}
+
+	.list_left{ margin: 0 3%;}
 }
-
-
 
 /*===================================
 　グローバルナビゲーション
@@ -371,6 +405,7 @@ img.img_normal{ width: 100%; display: block; }
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     z-index: 2;
+	pointer-events: none;
 }
 
 /*===================================
@@ -398,8 +433,8 @@ img.img_normal{ width: 100%; display: block; }
 .sub_menu_box{
 	margin-top: 11px;
 	float:right;
-	width: 70%;
-	max-width :600px;
+	width: 65%;
+	max-width: 600px;
 }
 
 #sub_menu ul{
@@ -745,7 +780,140 @@ p.footer-address{
     width: 30%;
 }
 
+/*===================================
+　スライドショー
+===================================*/
 
+#title_box {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	overflow: hidden;
+}
+
+@keyframes slideshow{
+  0%{
+    opacity: 0;
+  }
+  7%{
+    opacity: 1;
+  }
+  20%{
+    opacity: 1
+  }
+  33%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.slide img {
+  position: absolute;
+  display: block;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  opacity: 0;
+  animation :slideshow 32s linear infinite;
+}
+
+.slide img:nth-child(2){ animation-delay:  8s; }
+.slide img:nth-child(3){ animation-delay: 16s; }
+.slide img:last-child  { animation-delay: 24s; }
+
+#title{
+  position: absolute;
+	left:8%;
+	top: 10%;
+}
+
+#title h5{
+  top:0;
+	font-size: clamp(1px, 3.5vw, 35px);
+	text-align: left;
+	line-height: 120%;
+	letter-spacing: 0.4vw;	
+}
+
+#title h6{
+  top:0;
+	font-size: clamp(1px, 1.8vw, 18px);
+	text-align: left;
+	line-height: 150%;
+	letter-spacing: 0.3vw;	
+}
+
+#title h6.right{
+	text-align: right;
+}
+
+@media screen and (max-width:700px){
+	#title h5{
+	line-height: 100%;
+	letter-spacing: 0.4vw;	
+	}
+	#title h6{
+	line-height: 110%;
+	letter-spacing: 0.3vw;	
+	}
+}
+
+/*===================================
+　流れるテキスト
+===================================*/
+/*全共通*/
+
+.slide-in {
+  overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+
+}
+
+/* 上下のアニメーション*/
+.upAnime{
+    opacity: 0;/* 事前に透過0 にして消しておく*/
+}
+
+.slideAnimeDownUp {
+    animation-name:slideTextY100;
+    animation-duration: 10s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY100 {
+    from {
+        transform: translateY(100%);/* 要素を上の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);/* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+.slideAnimeUpDown {
+    animation-name:slideTextY-100;
+    animation-duration: 10s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY-100 {
+    from {
+    transform: translateY(-100%);/* 要素を下の枠外に移動*/
+    opacity: 0;
+    }
+    to {
+    transform: translateY(0);/* 要素を元の位置に移動*/
+    opacity: 1;
+    }
+}
 
 /*===================================
 　768px以下の場合の設定（携帯サイト用）
@@ -753,7 +921,7 @@ p.footer-address{
 
 @media screen and (max-width:700px){
 	
-	h4, h5, a, p, th, td, ul, li, a, address{
+	h4, a, p, th, td, ul, li, a, address{
 	    font-family: sans-serif;
 	}
 	
@@ -764,14 +932,14 @@ p.footer-address{
 	h3{ font-size:1.4rem; font-weight:300; }
 
 	h4{ font-size:1.1rem; }
-
-	#logo_konishi{ opacity: 1; }	
 	
-	#logo_konishi.logoactive{ opacity: 0; }
+
+	#logo_konishi{ opacity: 1; pointer-events: auto; }	
+	
+	#logo_konishi.logoactive{ opacity: 0; 　pointer-events: none; }
 	
 	.openbtn{ display:block; }
 	
-	.list_left{ margin-left: 30px; }
 	
 	address{ display: block; }
 
