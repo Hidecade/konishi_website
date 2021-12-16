@@ -125,13 +125,13 @@ table{
 
 
 th {
-	font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+	font-size: clamp(0.9rem, 1.5vw, 1.0rem);
 
 	border-bottom: 1px solid #E0E0E0;
 	line-height: 2rem;
 }
 td {
-	font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+	font-size: clamp(0.9rem, 1.5vw, 1.0rem);
 	border-bottom: 1px solid #E0E0E0;
 	line-height: 2rem;
 	width:30px
