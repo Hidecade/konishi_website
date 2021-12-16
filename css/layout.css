@@ -849,16 +849,7 @@ p.footer-address{
 	text-align: right;
 }
 
-@media screen and (max-width:700px){
-	#title h5{
-	line-height: 100%;
-	letter-spacing: 0.4vw;	
-	}
-	#title h6{
-	line-height: 110%;
-	letter-spacing: 0.3vw;	
-	}
-}
+
 
 /*===================================
 　流れるテキスト
