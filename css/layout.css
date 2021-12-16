@@ -567,7 +567,7 @@ img.img_normal{ width: 100%; display: block; }
 	}
 	
 	#footer_navi a{
-		line-height:  2.0rem;
+		line-height:  2.2rem;
 		font-size:0.8rem;
 		font-weight: 400;
 	}
@@ -620,34 +620,6 @@ p.footer-address{
 .footer-address a[href^="tel:"]{
 	line-height: 1.0rem;
 	font-size: 0.75rem;
-}
-
-/*700px以下の場合の設定（携帯サイト用）*/
-@media screen and (max-width:700px){
-	#footer_navi{
-		width: 100%;
-		width: 90%;
-	}
-	
-	#footer_navi ul{
-	  border-top: 1px solid #c0c0c0;
-	  border-bottom: 1px solid #c0c0c0;
-		display: block;
-	}
-	
-	#footer_navi li{
-		line-height:  2.2rem;
-		margin: auto;
-	}
-	
-	#footer_navi a{
-		font-size:0.7rem;
-	}
-	
-	#footer_navi li + li {
-	  border-left: 0px solid #c0c0c0;
-	  border-top: 1px solid #c0c0c0;
-	}
 }
 	
 /*===================================
@@ -838,7 +810,7 @@ p.footer-address{
 
 #title h5{
   top:0;
-	font-size: clamp(1px, 3.5vw, 35px);
+	font-size: clamp(5px, 3.5vw, 35px);
 	text-align: left;
 	line-height: 120%;
 	letter-spacing: 0.4vw;	
@@ -846,7 +818,7 @@ p.footer-address{
 
 #title h6{
   top:0;
-	font-size: clamp(1px, 1.8vw, 18px);
+	font-size: clamp(4px, 1.8vw, 18px);
 	text-align: left;
 	line-height: 150%;
 	letter-spacing: 0.3vw;	
