@@ -324,7 +324,7 @@ img.img_normal{ width: 100%; display: block; }
 	.consultation td{ font-size: 0.8rem;}
 	.consultation th{ font-size: 0.8rem;}
 
-	.list_left{ margin: 0 3%;}
+	.list_left{ margin: 0 3% 0 5%;}
 }
 
 /*===================================
