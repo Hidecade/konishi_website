@@ -426,7 +426,7 @@ img.img_normal{ width: 100%; display: block; }
 	opacity:0;　/* 幅768以下のメニューのところにicon_telを非表示 */
 	justify-content: center;
 	position: absolute;
-    top: 11px;
+    top: 12px;
 	left: -10px;
 	position: relative;/*ボタン内側の基点となるためrelativeを指定*/
 	float:right;
@@ -721,7 +721,7 @@ p.footer-address{
 	opacity: 0;
 	display:none;
 	position: relative;/*ボタン内側の基点となるためrelativeを指定*/
-	background:#404040;
+	//background:#404040;
 	cursor: pointer;
 	width: 46px;
 	height:46px;
@@ -924,8 +924,12 @@ p.footer-address{
 
 @media screen and (max-width:700px){
 	
-	h4, a, p, th, td, ul, li, a, address{
+	h4, a, p,a, address{
 	    font-family: sans-serif;
+	}
+	
+	h4, p, ul, li, th, td {
+	    font-family: serif;
 	}
 	
 	h1{ font-size:2.2rem; font-weight:300;}
