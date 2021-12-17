@@ -817,12 +817,12 @@ p.footer-address{
   left: 0%;
   width: 100%;
   opacity: 0;
-  animation :slideshow 32s linear infinite;
+  animation :slideshow 40s linear infinite;
 }
 
-.slide img:nth-child(2){ animation-delay:  8s; }
-.slide img:nth-child(3){ animation-delay: 16s; }
-.slide img:last-child  { animation-delay: 24s; }
+.slide img:nth-child(2){ animation-delay: 10s; }
+.slide img:nth-child(3){ animation-delay: 20s; }
+.slide img:last-child  { animation-delay: 30s; }
 
 #title{
   position: absolute;
