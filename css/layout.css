@@ -406,8 +406,8 @@ img.img_normal{ width: 100%; display: block; }
 	opacity:0;　/* 幅768以下のメニューのところにlogo_konishiを非表示 */
 	justify-content: center;
 	//position: absolute;
-    top: 8px;
-    left:8px;
+    top: 10px;
+    left:10px;
     //transform: translateX(-50%);
     //-webkit-transform: translateX(-50%);
     //-ms-transform: translateX(-50%);
