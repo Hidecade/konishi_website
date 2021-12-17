@@ -359,7 +359,8 @@ img.img_normal{ width: 100%; display: block; }
 
 #g_navi ul li.current a,
 #g_navi ul li a:hover{
-  color:#f0a000; 
+	color:#f0a000; 
+	font-weight: 400;
 }
 
 /*ウィンドウのサイズが小さくなった場合メニューを見えなくする（携帯サイト）*/
@@ -406,7 +407,7 @@ img.img_normal{ width: 100%; display: block; }
 	opacity:0;　/* 幅768以下のメニューのところにlogo_konishiを非表示 */
 	justify-content: center;
 	position: absolute;
-    top: 10px;
+    top: 11px;
     /*
 	left: 50%;
     transform: translateX(-50%);
@@ -416,6 +417,19 @@ img.img_normal{ width: 100%; display: block; }
 	left: 10px;
 	position: relative;/*ボタン内側の基点となるためrelativeを指定*/
 	float:left;
+    z-index: 2;
+	pointer-events: none;
+	
+}
+
+#icon_tel{
+	opacity:0;　/* 幅768以下のメニューのところにicon_telを非表示 */
+	justify-content: center;
+	position: absolute;
+    top: 11px;
+	left: -10px;
+	position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+	float:right;
     z-index: 2;
 	pointer-events: none;
 	
@@ -811,7 +825,7 @@ p.footer-address{
 #title{
   position: absolute;
 	left:8%;
-	top: 10%;
+	top: 12%;
 }
 
 #title h5{
@@ -927,6 +941,9 @@ p.footer-address{
 	
 	#logo_konishi.logoactive{ opacity: 0; 　pointer-events: none; }
 	
+	#icon_tel{ opacity: 1; pointer-events: auto; }	
+	
+	#icon_tel.logoactive{ opacity: 0; 　pointer-events: none; }
 	.openbtn{ display:block; }
 	
 	

@@ -59,12 +59,14 @@ $(".openbtn").click(function () {
     $(this).toggleClass('active');
 	$("#g_navi").toggleClass('panelactive');//#g_naviにpanelactiveクラスを付与
 	$("#logo_konishi").toggleClass('logoactive');//logo_konishi"にpanelactiveクラスを付与
+	$("#icon_tel").toggleClass('logoactive');//logo_konishi"にpanelactiveクラスを付与
 });
 
 $("#g_navi li a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g_navi").removeClass('panelactive');//#g_naviのpanelactiveクラスも除去
 	$("#logo_konishi").removeClass('logoactive');//#logo_konishi"のpanelactiveクラスも除去
+	$("#icon_tel").removeClass('logoactive');//#logo_konishi"のpanelactiveクラスも除去
 });
 
 //横幅が768px以下になった時の処理をまとめる
