@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*========= フォントの設定 ===============*/
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500&display=swap');
 
 
 h1, h2, h3, h4, h5, h6, a, p, th, td, ul, li, a, address{
@@ -113,10 +113,12 @@ h4{
 
 h5{
 	font-weight: 100;
+	text-shadow: 0px 0px 5px #FFF0F0;
 }
 
 h6{
 	font-weight: 300;
+	text-shadow: 0px 0px 5px #FFF0F0;
 }
 
 table{
