@@ -853,6 +853,7 @@ p.footer-address{
 @media screen and (max-width:700px){
 	#title h5{ font-weight: 300; font-size: clamp(5px, 4vw, 35px);}
 	#title h6{ font-weight: 300; font-size: clamp(4px, 3vw, 18px); letter-spacing: 0.1vw;}
+	#title em{ font-weight: 400;}
 	.slide img {
 		left: -35%;
 		width: 150%;
