@@ -134,6 +134,8 @@ h5{
 }
 
 h6{
+	color: #FFFFFF;
+	font-weight: 400;
 }
 
 table{
@@ -251,25 +253,6 @@ table.width_100 {
 	width: 100%;
 	margin: 0px auto;	
 }
-
-.news_title{
-	padding: 20px 10px 0px 10px;
-	height:28px;
-	border-bottom: 1px solid #e0e0e0;
-}
-
-.news_title h4{ 
-	float:left; 
-	text-align: left; 
-	width:70%; 
-	font-size: 1.2rem; }
-
-.news_title p{ 
-	float:right; 
-	text-align: right; 
-	width:30%; 
-	font-size: 1.2rem; 
-	color: #606060;}
 
 .contents_1008px img	{
 	width: 100%; 
@@ -393,6 +376,33 @@ img.img_normal{ width: 100%; display: block; }
 
 	.list_left{ margin: 0 3% 0 7%;}
 	
+}
+
+/*===================================
+　　news お知らせ
+===================================*/
+
+.news_title{
+	padding: 20px 10px 0px 10px;
+	height:28px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.news_title h4{ 
+	float:left; 
+	text-align: left; 
+	width:70%; 
+	font-size: 1.2rem; }
+
+.news_title p{
+	float: right; 
+	text-align: right; 
+	font-size: 1.0rem; 
+	color: #606060;
+	}
+
+/*700px以下の場合の設定（携帯サイト用）*/
+@media screen and (max-width:700px){
 	.news_title{
 		padding: 20px 10px 0px 10px;
 		height:auto;
@@ -414,9 +424,8 @@ img.img_normal{ width: 100%; display: block; }
 		line-height: 1rem;
 		color: #606060;}
 }
-
 /*===================================
-　　news_list お知らせ
+　　news_list お知らせ リスト
 ===================================*/
 
 .news_list{
@@ -433,21 +442,24 @@ img.img_normal{ width: 100%; display: block; }
 
 .news_list p{
 	text-align: center;
-	color: #FFFFFF;
 	font-size: 1rem;
-	font-weight: 400;
 }
 
-.notice_button{
+.news_button{
 	float:left;
 	padding: 0px 10px;
 	width:80px;
 }
 
-p.news_date{
+.news_button h6{
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+p.news_list_date{
 	font-weight: 300;
 	float: right;
-	padding-right: 10px;
+	/padding-right: 10px;
 	color: var(--k_black);
 }
 
@@ -463,25 +475,17 @@ p.news_date{
 		clear: both;
 	}
 	
-	.news_list p{
+	.news_list h6{
 		font-size: 0.8rem;
-		line-height: 1.2rem
+		line-height: 1.2rem;
+		margin-right: 5px;
 	}
 	
-	p.news_date{
+	p.news_list_date{
 		padding-right: 0px;
+		font-size: 0.8rem;
+		font-family: sans-serif;
 	}
-	
-	.notice_button_orange{
-		padding: 0px 0px;
-		width:80px;
-	}
-
-	.notice_button_gray{
-		padding: 0px 0px;
-		width:80px;
-	}
-	
 }
 
 /*===================================
