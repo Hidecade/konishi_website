@@ -441,7 +441,7 @@ img.img_normal{ width: 100%; display: block; }
 		font-size: 1.0rem; 
 		line-height: 1rem;
 		color: #606060;
-		font-family: sans-serif;
+		/font-family: sans-serif;
 	}
 }
 /*===================================
