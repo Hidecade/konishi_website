@@ -5,7 +5,7 @@
 
 :root {
 	--k_white: #FFFFFF;
-	--k_orange: #F39800;
+	--k_orange: #FF9000;
 	--k_gray: #909090;
 	--k_light_gray: #E0E0E0;
 	--k_white_gray: #F8F8F8;
@@ -158,6 +158,12 @@ main{
 }
 
 section{
+	position:relative;
+	padding: 10px 5% 20px 5%;
+	margin:0px auto;	
+}
+
+.k_section{
 	position:relative;
 	padding: 10px 5% 20px 5%;
 	margin:0px auto;	
@@ -676,6 +682,7 @@ p.news_date{
 	color:var(--k_black);
 	width:100%;
 	display: block;
+	/text-align: right;
 }
 
 #sub_menu ul li.current a{
