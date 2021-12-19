@@ -7,7 +7,13 @@
   --k_orange: #FF9417;
   --k_gray: #909090;
   --k_light_gray: #E0E0E0;
+  --k_white_gray: #F8F8F8;
   --k_black: #303030;
+  --k_blue: #54C3F1;
+  --k_green: #69BD83;
+  --k_pink: #EFA0A0;
+  --k_light_orange: #F9C270;
+
 }
 
 h1, h2, h3, h4, h5, h6, a, p, th, td, ul, li, a, address{
@@ -114,7 +120,7 @@ h3{
 
 h4{
 	font-size:1.1rem;
-	color: var(--color-orange);
+	color: var(--k_orange);
 	text-align: center;
 }
 
@@ -310,7 +316,19 @@ img.img_normal{ width: 100%; display: block; }
 
 .back_white{ background-color: #FFFFFF; }
 
-.back_gray{  background-color: #f8f8f8; }
+.back_white_gray{background-color: var(--k_white_gray); }
+
+.back_gray{background-color: var(--k_gray);}
+
+.back_orange{background-color: var(--k_orange);}
+
+.back_green{background-color: var(--k_green);}
+
+.back_blue{background-color: var(--k_blue);}
+
+.back_light_orange{background-color: var(--k_light_orange);}
+
+.back_pink{background-color: var(--k_pink);}
 
 .link{ color:cornflowerblue; text-decoration:underline;}
 
@@ -386,7 +404,7 @@ img.img_normal{ width: 100%; display: block; }
 }
 
 /*===================================
-　　index.html のお知らせ
+　　news_list お知らせ
 ===================================*/
 
 .news_list{
@@ -405,22 +423,17 @@ img.img_normal{ width: 100%; display: block; }
 	text-align: center;
 	color: #FFFFFF;
 	font-size: 1rem;
+	font-weight: 400;
 }
 
-.notice_button_orange{
+.notice_button{
 	float:left;
-	background-color: var(--k_orange);
 	padding: 0px 10px;
 	width:80px;
 }
 
-.notice_button_gray{
-	float:left;
-	background-color: var(--k_gray);
-	padding: 0px 10px;
-}
-
 p.news_date{
+	font-weight: 300;
 	float: right;
 	padding-right: 10px;
 	color: var(--k_black);
@@ -430,7 +443,6 @@ p.news_date{
 @media screen and (max-width:700px){
 	.news_list{
 		padding: 10px 0px ;
-		/height:50px;
 	}
 	
 	.news_list h5{
@@ -959,7 +971,7 @@ p.footer-address{
 #title{
   position: absolute;
 	left:8%;
-	top: 12%;
+	top: 8%;
 }
 
 #title h2{
@@ -1009,7 +1021,7 @@ p.footer-address{
 		padding-top: 83%;
 		overflow: hidden;
 	}
-	#title{ left:5%; top: 9%; }
+	#title{ left:5%; top: 7%; }
 }
 
 
