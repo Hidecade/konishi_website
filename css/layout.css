@@ -16,11 +16,13 @@
 	--k_green: #69BD83;
 	--k_pink: #EFA0A0;
 	--k_light_orange: #F9C270;
+	--k_brown: #C49958;
 	
 	--k_blue_hover: #9fd9f6;
 	--k_green_hover: #a5d4ad;
 	--k_pink_hover: #FFc0c0;
 	--k_light_orange_hover: #fcd7a1;
+	--k_brown_hover:: #D9BA8C;
 	
 	--k_max_width: 1280px;
 }
@@ -333,6 +335,8 @@ img.img_normal{ width: 100%; display: block; }
 .back_pink{background-color: var(--k_pink);}
 .back_pink:hover{background-color: var(--k_pink_hover);}
 
+.back_brown{background-color: var(--k_brown);}
+.back_brown:hover{background-color: var(--k_brown_hover);}
 
 .link{ color:cornflowerblue; text-decoration:underline;}
 
@@ -562,7 +566,7 @@ p.news_list_date{
 　　クリニック紹介
 ===================================*/
 .picture_title{
-	width: 100%;
+	width: 60%;
 	height: 44px;
 }
 
