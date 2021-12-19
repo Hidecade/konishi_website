@@ -3,6 +3,12 @@
 /*========= フォントの設定 ===============*/
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500&display=swap');
 
+:root {
+  --k_orange: #FF9417;
+  --k_gray: #909090;
+  --k_light_gray: #E0E0E0;
+  --k_black: #303030;
+}
 
 h1, h2, h3, h4, h5, h6, a, p, th, td, ul, li, a, address{
 	margin: 0px;
@@ -15,7 +21,7 @@ h1, h2, h3, h4, h5, h6, a, p, th, td, ul, li, a, address{
 	text-align: center;
 	font-family: 'M PLUS 1p', sans-serif;
 	font-weight: 300;
-	color:#202020;
+	color:var(--k_black);
 	font-size:1.0rem;
 	line-height: 1.8rem;
 	list-style-type: none;
@@ -43,7 +49,8 @@ table{
 	border-spacing: 0px;
 }
 
-em{	color: #FF9417; 
+em{	
+	color: var(--k_orange);
 	font-style: normal;
 }
 
@@ -107,18 +114,14 @@ h3{
 
 h4{
 	font-size:1.1rem;
-	color: #FF9417; 
+	color: var(--color-orange);
 	text-align: center;
 }
 
 h5{
-	font-weight: 100;
-	text-shadow: 0px 0px 5px #FFF0F0;
 }
 
 h6{
-	font-weight: 300;
-	text-shadow: 0px 0px 5px #FFF0F0;
 }
 
 table{
@@ -175,20 +178,19 @@ td.consultation_rest {
 　クラス定義
 ===================================*/
 
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
 .contents_1008px{
 	max-width :1008px;
 	margin: 0px auto;	
 }
 
-.contents_1280px{
-	max-width :1280px;
-	margin: 0px auto;	
-}
-
-.clearfix::after{
-	content:"";
-	display:block;
-	clear:both;
+.flexContainer img{
+	border-radius: 10px;
 }
 
 .center{
@@ -199,13 +201,18 @@ td.consultation_rest {
 	text-align: left;
 	margin:5px 10px;
 }
+.line_gray{
+	border-bottom: 1px solid var(--k_light_gray);
+	height:1px;
+	clear: both;
+}
 
 h4.left{
 	margin-top:15px;
 }
 
 .orange{	
-	color: #FF9417; 
+	color: var(--k_orange); 
 }
 
 .list_left{
@@ -228,6 +235,25 @@ table.width_100 {
 	margin: 0px auto;	
 }
 
+.news_title{
+	padding: 20px 10px 0px 10px;
+	height:28px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.news_title h4{ 
+	float:left; 
+	text-align: left; 
+	width:70%; 
+	font-size: 1.2rem; }
+
+.news_title p{ 
+	float:right; 
+	text-align: right; 
+	width:30%; 
+	font-size: 1.2rem; 
+	color: #606060;}
+
 .contents_1008px img	{
 	width: 100%; 
 }
@@ -241,9 +267,6 @@ table.width_100 {
 	margin:20px 0px; 
 }
 
-.flexContainer img{
-	border-radius: 10px;
-}
 
 .width_8_5{ width: 8.5%; }
 .width_10{ width: 10%; }
@@ -254,6 +277,10 @@ table.width_100 {
 .width_40{ width: 40%; }
 .width_50{ width: 50%; }
 .width_50{ width: 90%; }
+
+#news_container{
+	
+}
 
 .flex_row_reverse{ flex-direction: row-reverse;}
 
@@ -289,7 +316,19 @@ img.img_normal{ width: 100%; display: block; }
 
 /*700px以下の場合の設定（携帯サイト用）*/
 @media screen and (max-width:700px){
+	
+	a, address{ font-family: sans-serif; }
+	
+	h4, h5, p, a, ul, li, th, td { font-family: serif; }
+	
+	h1{ font-size:2.2rem; font-weight:300;}
 
+	h2{ font-size:2.0rem; font-weight:300; }
+
+	h3{ font-size:1.4rem; font-weight:300; }
+
+	h4{ font-size:1.1rem; }
+	
 	.flexContainer{ display: block; justify-content: center; }
 	
 	.img_container_30{  width: 100%; margin-top: 20px; }
@@ -321,12 +360,105 @@ img.img_normal{ width: 100%; display: block; }
 	p.small{ font-size: 0.6rem;}
 	
 	table.consultation { width: 100%; padding: 10px 0px; }
-	//.consultation td{ font-size: 0.7rem;}
-	//.consultation th{ font-size: 0.7rem;}
 
 	.list_left{ margin: 0 3% 0 7%;}
+	
+	.news_title{
+		padding: 20px 10px 0px 10px;
+		height:auto;
+		border-bottom:0;
+	}
+
+	.news_title h4{ 
+		float:none; 
+		text-align: left; 
+		line-height: 1rem;
+		width:100%; 
+		font-size: 1.1rem; }
+
+	.news_title p{ 
+		float:none; 
+		text-align: right; 
+		width:auto; 
+		font-size: 1.0rem; 
+		line-height: 1rem;
+		color: #606060;}
 }
 
+/*===================================
+　　index.html のお知らせ
+===================================*/
+
+.news_list{
+	clear: both;
+	padding: 10px 30px ;
+	height:30px;
+}
+
+.news_list h5{
+	text-align: left;
+	margin-left: 10px;
+	float:left;
+}
+
+.news_list p{
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 1rem;
+}
+
+.notice_button_orange{
+	float:left;
+	background-color: var(--k_orange);
+	padding: 0px 10px;
+	width:80px;
+}
+
+.notice_button_gray{
+	float:left;
+	background-color: var(--k_gray);
+	padding: 0px 10px;
+}
+
+p.news_date{
+	float: right;
+	padding-right: 10px;
+	color: var(--k_black);
+}
+
+/*700px以下の場合の設定（携帯サイト用）*/
+@media screen and (max-width:700px){
+	.news_list{
+		padding: 10px 0px ;
+		/height:50px;
+	}
+	
+	.news_list h5{
+		font-size: 0.8rem;
+		margin-left: 5px;
+		clear: both;
+	}
+	
+	.news_list p{
+		font-size: 0.8rem;
+		line-height: 1.2rem
+	}
+	
+	p.news_date{
+		padding-right: 0px;
+	}
+	
+	.notice_button_orange{
+		padding: 0px 0px;
+		width:80px;
+	}
+
+	.notice_button_gray{
+		padding: 0px 0px;
+		width:80px;
+	}
+	
+}
 /*===================================
 　グローバルナビゲーション
 ===================================*/
@@ -334,7 +466,7 @@ img.img_normal{ width: 100%; display: block; }
 	height: 46px;
 	width:100%;
 	align-items: center;
-	background:#404040;
+	background:var(--k_black);;
 	position:absolute;
 	top: 0px;
     z-index: 1;
@@ -442,6 +574,7 @@ img.img_normal{ width: 100%; display: block; }
 ===================================*/
 #header_sub_menu{
 	max-width :1008px;
+	//min-width :800px;
 	height: 40px;
 	width: 90%;						/* 左右5%の余白に設定 */
 	background-color: #FFFFFF;
@@ -454,7 +587,7 @@ img.img_normal{ width: 100%; display: block; }
 	text-align: center;
 	float:left;
 	font-size: 2rem;
-	color: #202020;	
+	color: var(--k_black);	
 	padding: 6px 0px 3px 10px;
 	margin: 0px;
 }
@@ -471,19 +604,19 @@ img.img_normal{ width: 100%; display: block; }
 }
 #sub_menu li{
 	flex-grow: 1;
-	justify-content:space-between
+	justify-content:flex-end;
 	line-height: 1rem;
 }
 
 #sub_menu a{
 	font-size: 0.8rem;
-	color: #303030;
+	color:var(--k_black);
 	width:100%;
-	display: block;　
+	display: block;
 }
 
 #sub_menu ul li.current a{
-	color:#303030; 
+	color:var(--k_black);
 	background-color: #F0F0F0;
 }
 
@@ -666,7 +799,7 @@ p.footer-address{
 }
 
 #page-top a:hover{
-	background: #FF9417;
+	background: var(--k_orange);
 }
 
 /*リンクを右下に固定*/
@@ -723,7 +856,6 @@ p.footer-address{
 	opacity: 0;
 	display:none;
 	position: relative;/*ボタン内側の基点となるためrelativeを指定*/
-	//background:#404040;
 	cursor: pointer;
 	width: 46px;
 	height:46px;
@@ -830,30 +962,45 @@ p.footer-address{
 	top: 12%;
 }
 
-#title h5{
-  top:0;
+#title h2{
+	top:0;
 	font-size: clamp(5px, 3.5vw, 35px);
 	text-align: left;
 	line-height: 150%;
 	letter-spacing: 0.4vw;	
+	font-weight: 100;
+	text-shadow: 0px 0px 5px #FFF0F0;
+	margin: 0;
 }
 
-#title h6{
-  top:0;
+#title p{
+	top:0;
 	font-size: clamp(4px, 1.8vw, 18px);
 	text-align: left;
 	line-height: 150%;
 	letter-spacing: 0.3vw;	
+	font-weight: 300;
+	text-shadow: 0px 0px 5px #FFF0F0;
 }
 
-#title h6.right{
+#title p.right{
 	text-align: right;
 }
 
 @media screen and (max-width:700px){
-	#title h5{ font-weight: 300; font-size: clamp(5px, 4vw, 35px);}
-	#title h6{ font-weight: 300; font-size: clamp(4px, 3vw, 18px); letter-spacing: 0.1vw;}
+	#title h2{ 
+		font-weight: 300; 
+		font-size: clamp(5px, 4vw, 35px);
+	}
+	#title p{ 
+		font-weight: 300; 
+		font-size: clamp(4px, 3vw, 18px); 
+		letter-spacing: 0.1vw;
+		font-family: sans-serif;
+	}
+	
 	#title em{ font-weight: 400;}
+	
 	.slide img {
 		left: -35%;
 		width: 150%;
@@ -926,22 +1073,6 @@ p.footer-address{
 ===================================*/
 
 @media screen and (max-width:700px){
-	
-	h4, a, p,a, address{
-	    font-family: sans-serif;
-	}
-	
-	h4, p, ul, li, th, td {
-	    font-family: serif;
-	}
-	
-	h1{ font-size:2.2rem; font-weight:300;}
-
-	h2{ font-size:2.0rem; font-weight:300; }
-
-	h3{ font-size:1.4rem; font-weight:300; }
-
-	h4{ font-size:1.1rem; }
 	
 
 	#logo_konishi{ opacity: 1; pointer-events: auto; }	
