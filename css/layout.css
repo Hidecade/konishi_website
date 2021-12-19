@@ -4,16 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500&display=swap');
 
 :root {
-  --k_orange: #FF9417;
-  --k_gray: #909090;
-  --k_light_gray: #E0E0E0;
-  --k_white_gray: #F8F8F8;
-  --k_black: #303030;
-  --k_blue: #54C3F1;
-  --k_green: #69BD83;
-  --k_pink: #EFA0A0;
-  --k_light_orange: #F9C270;
-
+	--k_white: #FFFFFF;
+	--k_orange: #FF9417;
+	--k_gray: #909090;
+	--k_light_gray: #E0E0E0;
+	--k_white_gray: #F8F8F8;
+	--k_black: #303030;
+	--k_blue: #54C3F1;
+	--k_green: #69BD83;
+	--k_pink: #EFA0A0;
+	--k_light_orange: #F9C270;
 }
 
 h1, h2, h3, h4, h5, h6, a, p, th, td, ul, li, a, address{
@@ -471,6 +471,35 @@ p.news_date{
 	}
 	
 }
+
+/*===================================
+　　top page 診療科の紹介　
+===================================*/
+.introduction{
+	margin: 60px 0;
+}
+
+.txt_container_60{ width:  60%; border-radius: 0px; padding: 0px; }
+
+.flexContainer img{ width:100%; border-radius: 0; }
+
+.intro_title{
+	width: 100%;
+	height: 50px;
+	
+}
+.intro_title h3{
+	text-align: left;
+	font-weight: 300;
+	font-size: 1.3rem;
+	padding: 0; border: 0px; padding:  10px 20px; margin: 0;
+	color: var(--k_white);
+}
+
+.intro_title p{
+	padding: 15px 15px 5px 15px ;
+}
+
 /*===================================
 　グローバルナビゲーション
 ===================================*/
