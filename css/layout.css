@@ -209,6 +209,7 @@ td.consultation_rest {
 .contents_1008px{
 	max-width :1008px;
 	margin: 0px auto;	
+	//max-width: var(--k_max_width);
 }
 
 .flexContainer img{
