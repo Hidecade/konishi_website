@@ -505,13 +505,13 @@ p.news_date{
 
 .intro_title{
 	width: 60%;
-	height: 50px;
+	height: 44px;
 }
 .introduction h3{
 	text-align: left;
 	font-weight: 300;
 	font-size: 1.3rem;
-	padding: 0; border: 0px; padding:  11px 20px; margin: 0;
+	padding: 0; border: 0px; padding:  8px 20px; margin: 0;
 	color: var(--k_white);
 }
 
