@@ -441,9 +441,10 @@ img.img_normal{ width: 100%; display: block; }
 		font-size: 1.0rem; 
 		line-height: 1rem;
 		color: #606060;
-		/font-family: sans-serif;
+		//font-family: sans-serif;
 	}
 }
+
 /*===================================
 　　news_list お知らせ リスト
 ===================================*/
@@ -524,6 +525,7 @@ p.news_list_date{
 	display: block;
 	width: 60%; border-radius: 0px; padding: 0px; 
 }
+
 .intro_img{ width: 40%; margin: 0px; border: 0px; }
 
 .introduction img{ width:100%; border-radius: 0; }
@@ -532,6 +534,7 @@ p.news_list_date{
 	width: 60%;
 	height: 44px;
 }
+
 .introduction h3{
 	text-align: left;
 	font-weight: 300;
@@ -552,6 +555,15 @@ p.news_list_date{
 	}
 	.intro_img{ width: 100%;}
 	.intro_txt_container{ width: 100%; }
+}
+
+
+/*===================================
+　　クリニック紹介
+===================================*/
+.picture_title{
+	width: 100%;
+	height: 44px;
 }
 
 /*===================================
@@ -670,7 +682,7 @@ p.news_list_date{
 	max-width :1008px;
 	//min-width :800px;
 	height: 40px;
-	width: 90%;						/* 左右5%の余白に設定 */
+	width: 100%;						/* 左右5%の余白に設定 */
 	background-color: #FFFFFF;
 	margin:30px auto 0px auto;				/* メニューは常にセンター */
 	border-bottom: 1px solid #c0c0c0;
