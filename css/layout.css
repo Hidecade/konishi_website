@@ -5,15 +5,21 @@
 
 :root {
 	--k_white: #FFFFFF;
-	--k_orange: #FF9417;
+	--k_orange: #F39800;
 	--k_gray: #909090;
 	--k_light_gray: #E0E0E0;
 	--k_white_gray: #F8F8F8;
 	--k_black: #505050;
+	
 	--k_blue: #54C3F1;
 	--k_green: #69BD83;
 	--k_pink: #EFA0A0;
 	--k_light_orange: #F9C270;
+	
+	--k_blue_hover: #9fd9f6;
+	--k_green_hover: #a5d4ad;
+	--k_pink_hover: #FFc0c0;
+	--k_light_orange_hover: #fcd7a1;
 }
 
 h1, h2, h3, h4, h5, h6, a, p, th, td, ul, li, a, address{
@@ -133,7 +139,6 @@ h6{
 table{
 	margin-top:20px;
 }
-
 
 th {
 	font-size: clamp(0.9rem, 1.5vw, 1.0rem);
@@ -273,7 +278,6 @@ table.width_100 {
 	margin:20px 0px; 
 }
 
-
 .width_8_5{ width: 8.5%; }
 .width_10{ width: 10%; }
 .width_15{ width: 15%; }
@@ -283,10 +287,6 @@ table.width_100 {
 .width_40{ width: 40%; }
 .width_50{ width: 50%; }
 .width_50{ width: 90%; }
-
-#news_container{
-	
-}
 
 .flex_row_reverse{ flex-direction: row-reverse;}
 
@@ -322,13 +322,19 @@ img.img_normal{ width: 100%; display: block; }
 
 .back_orange{background-color: var(--k_orange);}
 
+
 .back_green{background-color: var(--k_green);}
+.back_green:hover{background-color: var(--k_green_hover);}
 
 .back_blue{background-color: var(--k_blue);}
+.back_blue:hover{background-color: var(--k_blue_hover);}
 
 .back_light_orange{background-color: var(--k_light_orange);}
+.back_light_orange:hover{background-color: var(--k_light_orange_hover);}
 
 .back_pink{background-color: var(--k_pink);}
+.back_pink:hover{background-color: var(--k_pink_hover);}
+
 
 .link{ color:cornflowerblue; text-decoration:underline;}
 
@@ -499,7 +505,7 @@ p.news_date{
 	text-align: left;
 	font-weight: 300;
 	font-size: 1.3rem;
-	padding: 0; border: 0px; padding:  10px 20px; margin: 0;
+	padding: 0; border: 0px; padding:  11px 20px; margin: 0;
 	color: var(--k_white);
 }
 
@@ -525,7 +531,7 @@ p.news_date{
 　グローバルナビゲーション
 ===================================*/
 #header{
-	height: 46px;
+	height: 50px;
 	width:100%;
 	align-items: center;
 	background:var(--k_black);;
@@ -547,9 +553,9 @@ p.news_date{
 	display: flex;
 	color: #ffffff;
 	padding:0px 15px;
-	height: 46px;
+	height: 50px;
 	//transition:all .3s;
-	font-size: 13px;
+	font-size: 0.9rem;
 	align-items: center;
 }
 
@@ -603,7 +609,7 @@ p.news_date{
 	opacity:0;　/* 幅768以下のメニューのところにlogo_konishiを非表示 */
 	justify-content: center;
 	position: absolute;
-    top: 11px;
+    top: 12px;
     /*
 	left: 50%;
     transform: translateX(-50%);
@@ -1058,7 +1064,7 @@ p.footer-address{
 		font-weight: 300; 
 		font-size: clamp(4px, 3vw, 18px); 
 		letter-spacing: 0.1vw;
-		font-family: sans-serif;
+		font-family: serif;
 	}
 	
 	#title em{ font-weight: 400;}
