@@ -7,6 +7,7 @@
 	--k_white: #FFFFFF;
 	--k_orange: #FF9000;
 	--k_gray: #909090;
+	--k_dark_gray: #707070;
 	--k_light_gray: #E0E0E0;
 	--k_white_gray: #F8F8F8;
 	--k_black: #505050;
@@ -61,7 +62,7 @@ table{
 	border-spacing: 0px;
 }
 
-em{	
+em{
 	color: var(--k_orange);
 	font-style: normal;
 }
@@ -123,7 +124,6 @@ h3{
 	margin: 30px 0 15px 0;
 }
 
-
 h4{
 	font-size:1.1rem;
 	color: var(--k_orange);
@@ -148,6 +148,7 @@ th {
 	border-bottom: 1px solid #E0E0E0;
 	line-height: 2rem;
 }
+
 td {
 	font-size: clamp(0.9rem, 1.5vw, 1.0rem);
 	border-bottom: 1px solid #E0E0E0;
@@ -160,13 +161,13 @@ main{
 }
 
 section{
-	position:relative;
+	position: relative;
 	padding: 10px 5% 20px 5%;
 	margin:0px auto;	
 }
 
 .k_section{
-	position:relative;
+	position: relative;
 	padding: 10px 5% 20px 5%;
 	margin:0px auto;	
 }
@@ -220,6 +221,7 @@ td.consultation_rest {
 	text-align: left;
 	margin:5px 10px;
 }
+
 .line_gray{
 	border-bottom: 1px solid var(--k_light_gray);
 	height:1px;
@@ -293,7 +295,11 @@ img.img_normal{ width: 100%; display: block; }
 
 .img_container_55{ width: 55%; margin: 0px; border: 0px; }
 
-.txt_container_center{ width: 100%; border-radius: 10px; padding: 10px 30px 10px 30px; }
+.txt_container_center{
+	width: 100%; 
+	border-radius: 10px; 
+	padding: 10px 30px 10px 30px; 
+}
 
 .txt_container_40{ width:  40%; border-radius: 10px; padding: 10px; }
 
@@ -383,16 +389,19 @@ img.img_normal{ width: 100%; display: block; }
 ===================================*/
 
 .news_title{
-	padding: 20px 10px 0px 10px;
-	height:28px;
+	padding: 20px 10px 0px 0px;
+	height: 28px;
 	border-bottom: 1px solid #e0e0e0;
 }
 
 .news_title h4{ 
 	float:left; 
 	text-align: left; 
-	width:70%; 
-	font-size: 1.2rem; }
+	font-size: 1.2rem; 
+	color: var(--k_dark_gray);
+	margin-left: 10px;
+	font-weight: 400;
+}
 
 .news_title p{
 	float: right; 
@@ -404,25 +413,33 @@ img.img_normal{ width: 100%; display: block; }
 /*700px以下の場合の設定（携帯サイト用）*/
 @media screen and (max-width:700px){
 	.news_title{
-		padding: 20px 10px 0px 10px;
+		padding: 20px 0px 0px 0px;
 		height:auto;
-		border-bottom:0;
 	}
 
 	.news_title h4{ 
+		clear:both;
 		float:none; 
 		text-align: left; 
-		line-height: 1rem;
+		line-height: 1.2rem;
 		width:100%; 
-		font-size: 1.1rem; }
-
+		font-size: 1.1rem; 
+		margin: 10px 0 5px 0;
+		color: var(--k_black);
+	}
+	.news_title h6{
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+	}
 	.news_title p{ 
 		float:none; 
 		text-align: right; 
 		width:auto; 
 		font-size: 1.0rem; 
 		line-height: 1rem;
-		color: #606060;}
+		color: #606060;
+		font-family: sans-serif;
+	}
 }
 /*===================================
 　　news_list お知らせ リスト
