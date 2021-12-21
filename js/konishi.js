@@ -141,7 +141,7 @@ lightbox.option({
 function fadeAnime(){
 // flipLeft
 $('.gallery li').each(function(){ 
-    var elemPos = $(this).offset().top-150;
+    var elemPos = $(this).offset().top;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight){
@@ -150,10 +150,6 @@ $('.gallery li').each(function(){
 });
 }
 
-// 画面をスクロールをしたら動かしたい場合の記述
-  $(window).scroll(function (){
-    fadeAnime();/* アニメーション用の関数を呼ぶ*/
-  });// ここまで画面をスクロールをしたら動かしたい場合の記述
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
   $(window).on('load', function(){
