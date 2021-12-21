@@ -136,24 +136,10 @@ lightbox.option({
   'albumLabel': ' %1 / total %2 '//合計枚数中現在何枚目かというキャプションの見せ方を変更できる
 })
 
-//ふわっと見せるためのJS。3-5-3 ページが読み込まれたらすぐに動かしたい&画面をスクロールをしたら動かしたい場合内のソースコード使用
-
-function fadeAnime(){
-// flipLeft
-$('.gallery li').each(function(){ 
-    var elemPos = $(this).offset().top;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight){
-        $(this).addClass('flipLeft');
-    }
-});
-}
-
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
   $(window).on('load', function(){
-    fadeAnime();/* アニメーション用の関数を呼ぶ*/
+    $('.gallery li').addClass('flipLeft');
   });// ここまでページが読み込まれたらすぐに動かしたい場合の記述
 
 
