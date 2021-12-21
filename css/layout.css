@@ -204,6 +204,18 @@ td.consultation_rest {
 
 .consultation td{ font-size: clamp(0.6rem, 1.5vw, 1.1rem); }
 
+#gallary_section{
+	margin: 0px 0% 35px 0%;
+}
+
+h1.gallary{
+	font-weight: 100;
+	font-size:2.5rem;
+	margin: 60px 0 50px 0;
+	padding: 0;
+	border: 0;
+}
+
 /*===================================
 　クラス定義
 ===================================*/
@@ -346,8 +358,22 @@ img.img_normal{ width: 100%; display: block; }
 .green  { color: var(--k_green ); }
 
 h2.item_orange{ 
-	//color: var(--k_orange);  
 	border-left:15px solid var(--k_light_orange);
+	padding-left:10px;
+}
+
+h2.item_blue{ 
+	border-left:15px solid var(--k_light_blue);
+	padding-left:10px;
+}
+
+h2.item_green{  
+	border-left:15px solid var(--k_light_green);
+	padding-left:10px;
+}
+
+h2.item_pink{  
+	border-left:15px solid var(--k_light_pink);
 	padding-left:10px;
 }
 
@@ -359,24 +385,12 @@ h4.title_orange{
 	font-weight: 400;
 }
 
-h2.item_blue{ 
-	//color: var(--k_light_blue);  
-	border-left:15px solid var(--k_light_blue);
-	padding-left:10px;
-}
-
 h4.title_blue{
 	color: var(--k_dark_gray); 
 	border-left:10px solid var(--k_light_blue);
 	border-bottom:1px solid var(--k_light_gray);
 	padding-left:10px;
 	font-weight: 400;
-}
-
-h2.item_green{ 
-	//color: var(--k_light_green);  
-	border-left:15px solid var(--k_light_green);
-	padding-left:10px;
 }
 
 h4.title_green{
@@ -1258,3 +1272,63 @@ p.footer-address{
 	section#area-0{　padding: 0;　}
 
 }
+
+/*==================================================
+ギャラリーのためのcss
+===================================*/
+
+/*==================================================
+ギャラリーのためのcss
+===================================*/
+.gallery{
+columns: 4;/*段組みの数*/
+padding:0 15px;/*ギャラリー左右に余白をつける*/
+}
+
+.gallery li {
+    margin-bottom: 20px;/*各画像下に余白をつける*/
+}
+
+/*ギャラリー内のイメージは横幅100%にする*/
+.gallery img{
+  width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/}
+
+@media only screen and (max-width: 900px) {
+	.gallery{
+	columns:3;
+	}	
+}
+
+@media only screen and (max-width: 768px) {
+	.gallery{
+	columns: 2;
+	}	
+}
+
+/*画像を出現させるアニメーションCSS*/
+
+.flipLeft{
+animation-name: flipLeft;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+perspective-origin: left center;
+opacity: 0;
+}
+
+@keyframes flipLeft{
+  from {
+   transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+  opacity: 0;
+  }
+
+  to {
+  transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+  opacity: 1;
+  }
+}
+
+
+
+
