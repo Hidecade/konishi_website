@@ -223,11 +223,10 @@ td.consultation_rest {
 .contents_1008px{
 	max-width :1008px;
 	margin: 0px auto;	
-	//max-width: var(--k_max_width);
 }
 
 .flexContainer img{
-	//border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 .center{
@@ -334,7 +333,6 @@ img.img_normal{ width: 100%; display: block; }
 .back_white{ background-color: #FFFFFF; }
 .back_white_gray{background-color: var(--k_white_gray); }
 .back_gray{background-color: var(--k_gray);}
-.back_orange{background-color: var(--k_orange);}
 
 .back_green{background-color: var(--k_light_green);}
 .back_green:hover{background-color: var(--k_green_hover);}
@@ -342,8 +340,8 @@ img.img_normal{ width: 100%; display: block; }
 .back_blue{background-color: var(--k_light_blue);}
 .back_blue:hover{background-color: var(--k_blue_hover);}
 
-.back_light_orange{background-color: var(--k_light_orange);}
-.back_light_orange:hover{background-color: var(--k_orange_hover);}
+.back_orange{background-color: var(--k_light_orange);}
+.back_orange:hover{background-color: var(--k_orange_hover);}
 
 .back_pink{background-color: var(--k_light_pink);}
 .back_pink:hover{background-color: var(--k_pink_hover);}
@@ -522,7 +520,7 @@ h4.title_pink{
 		font-size: 1.0rem; 
 		line-height: 1rem;
 		color: #606060;
-		//font-family: sans-serif;
+		/* font-family: sans-serif; */
 	}
 }
 
@@ -732,30 +730,20 @@ p.news_list_date{
 }
 
 #logo_konishi{
-	opacity:0;　/* 幅768以下のメニューのところにlogo_konishiを非表示 */
-	justify-content: center;
-	position: absolute;
+	opacity:0;
     top: 12px;
-    /*
-	left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-	*/
 	left: 10px;
-	position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+	position: relative;
 	float:left;
     z-index: 2;
 	pointer-events: none;
 }
 
 #icon_tel{
-	opacity:0;　/* 幅768以下のメニューのところにicon_telを非表示 */
-	justify-content: center;
-	position: absolute;
+	opacity:0;
     top: 13px;
 	left: -10px;
-	position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+	position: relative;
 	float:right;
     z-index: 2;
 	pointer-events: none;
@@ -766,7 +754,7 @@ p.news_list_date{
 ===================================*/
 #header_sub_menu{
 	max-width :1008px;
-	//min-width :800px;
+	/* min-width :800px; */
 	height: 40px;
 	width: 100%;						/* 左右5%の余白に設定 */
 	background-color: #FFFFFF;
@@ -884,8 +872,7 @@ p.news_list_date{
 	color:#202020;
 	font-size: 0.75rem;
 	line-height:  0.75rem;
-	display: block;　
-	
+	display: block;
 }
 #footer_navi li + li {
  	border-left: 1px solid #b0b0b0;
@@ -1059,7 +1046,7 @@ p.footer-address{
 }
 
 .openbtn.openMenu{
-	opacity: 1;　/* 幅768以下になったらメニューボタンを表示 */
+	opacity: 1; /* 幅768以下になったらメニューボタンを表示 */
 }
 
 /*ボタン内側*/
@@ -1264,16 +1251,16 @@ p.footer-address{
 
 	#logo_konishi{ opacity: 1; pointer-events: auto; }	
 	
-	#logo_konishi.logoactive{ opacity: 0; 　pointer-events: none; }
+	#logo_konishi.logoactive{ opacity: 0; pointer-events: none; }
 	
 	#icon_tel{ opacity: 1; pointer-events: auto; }	
 	
-	#icon_tel.logoactive{ opacity: 0; 　pointer-events: none; }
+	#icon_tel.logoactive{ opacity: 0; pointer-events: none; }
 	.openbtn{ display:block; }
 	
 	
 	address{ display: block; }
-	section#area-0{　padding: 0;　}
+	section#area-0{ padding: 0; }
 
 }
 
