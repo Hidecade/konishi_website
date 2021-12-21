@@ -141,13 +141,11 @@ lightbox.option({
 function fadeAnime(){
 // flipLeft
 $('.gallery li').each(function(){ 
-    var elemPos = $(this).offset().top-120;
+    var elemPos = $(this).offset().top-50;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight){
         $(this).addClass('flipLeft');
-    }else{
-        $(this).removeClass('flipLeft');
     }
 });
 }
@@ -161,4 +159,6 @@ $('.gallery li').each(function(){
   $(window).on('load', function(){
     fadeAnime();/* アニメーション用の関数を呼ぶ*/
   });// ここまでページが読み込まれたらすぐに動かしたい場合の記述
+
+
 
