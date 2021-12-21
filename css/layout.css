@@ -7,27 +7,27 @@
 	--k_white: #FFFFFF;
 	--k_gray: #909090;
 	--k_dark_gray: #707070;
-	--k_light_gray: #E0E0E0;
+	--k_light_gray: #C0C0C0;
 	--k_white_gray: #F8F8F8;
 	--k_black: #505050;
 
 	--k_blue: #00A0E9;
 	--k_green: #00A95F;
-	--k_pink: #E887B4;
+	--k_pink: #EF888A;
 	--k_orange: #F39800;
-	--k_brown: #845A12;
+	--k_brown: #7d0022;
 	
 	--k_light_blue: #54C3F1;
 	--k_light_green: #69BD83;
 	--k_light_pink: #EFA0A0;
 	--k_light_orange: #F9C270;
-	--k_light_brown: #C49958;
+	--k_light_brown: #a7374a;
 	
 	--k_blue_hover: #9fd9f6;
 	--k_green_hover: #a5d4ad;
 	--k_pink_hover: #FFc0c0;
 	--k_orange_hover: #fcd7a1;
-	--k_brown_hover: #D9BA8C;
+	--k_brown_hover: #cf737a;
 	
 	--k_max_width: 1280px;
 }
@@ -350,6 +350,7 @@ img.img_normal{ width: 100%; display: block; }
 .blue   { color: var(--k_blue  ); }
 .orange { color: var(--k_orange); }
 .green  { color: var(--k_green ); }
+.pink   { color: var(--k_pink  ); }
 
 h2.item_orange{ 
 	border-left:15px solid var(--k_light_orange);
@@ -368,6 +369,11 @@ h2.item_green{
 
 h2.item_pink{  
 	border-left:15px solid var(--k_light_pink);
+	padding-left:10px;
+}
+
+h2.item_brown{  
+	border-left:15px solid var(--k_light_brown);
 	padding-left:10px;
 }
 
@@ -394,6 +400,15 @@ h4.title_green{
 	padding-left:10px;
 	font-weight: 400;
 }
+
+h4.title_pink{
+	color: var(--k_dark_gray); 
+	border-left:10px solid var(--k_light_pink);
+	border-bottom:1px solid var(--k_light_gray);
+	padding-left:10px;
+	font-weight: 400;
+}
+
 
 .link{ color:cornflowerblue; text-decoration:underline;}
 
@@ -751,7 +766,7 @@ p.news_list_date{
 	width: 100%;						/* 左右5%の余白に設定 */
 	background-color: #FFFFFF;
 	margin:30px auto 0px auto;				/* メニューは常にセンター */
-	border-bottom: 1px solid #c0c0c0;
+	border-bottom: 1px solid var(--k_light_gray);
 }
 
 #header_sub_menu h2{
@@ -822,7 +837,7 @@ p.news_list_date{
 		margin: auto;
 		width: 100%;
 		max-width :none;
-		border-top: 1px solid #b0b0b0;
+		border-top: 1px solid var(--k_light_gray);
 	}
 	#sub_menu a{
 		font-weight: 400;
@@ -837,7 +852,7 @@ p.news_list_date{
 	}
 	
 	#sub_menu li + li {
-		border-top: 1px solid #b0b0b0;
+		border-top: 1px solid var(--k_light_gray);
 	}
 	
 }
@@ -1137,17 +1152,6 @@ p.footer-address{
   position: absolute;
 	left:8%;
 	top: 8%;
-}
-
-#title h2{
-	top:0;
-	font-size: clamp(5px, 3.5vw, 35px);
-	text-align: left;
-	line-height: 150%;
-	letter-spacing: 0.4vw;	
-	font-weight: 100;
-	/text-shadow: 0px 0px 5px #FFF0F0;
-	margin: 0;
 }
 
 #title p{
