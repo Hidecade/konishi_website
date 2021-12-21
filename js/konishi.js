@@ -141,7 +141,7 @@ lightbox.option({
 function fadeAnime(){
 // flipLeft
 $('.gallery li').each(function(){ 
-    var elemPos = $(this).offset().top-50;
+    var elemPos = $(this).offset().top-150;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight){
