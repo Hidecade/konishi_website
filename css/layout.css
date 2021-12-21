@@ -340,12 +340,13 @@ img.img_normal{ width: 100%; display: block; }
 .back_brown{background-color: var(--k_light_brown);}
 .back_brown:hover{background-color: var(--k_brown_hover);}
 
-.gray        { color: var(--k_gray  ); }
-.blue        { color: var(--k_blue  ); }
-.orange      { color: var(--k_orange); }
+.gray   { color: var(--k_gray  ); }
+.blue   { color: var(--k_blue  ); }
+.orange { color: var(--k_orange); }
+.green  { color: var(--k_green ); }
 
 h2.item_orange{ 
-	color: var(--k_orange);  
+	//color: var(--k_orange);  
 	border-left:15px solid var(--k_light_orange);
 	padding-left:10px;
 }
@@ -358,9 +359,8 @@ h4.title_orange{
 	font-weight: 400;
 }
 
-
 h2.item_blue{ 
-	color: var(--k_light_blue);  
+	//color: var(--k_light_blue);  
 	border-left:15px solid var(--k_light_blue);
 	padding-left:10px;
 }
@@ -368,6 +368,20 @@ h2.item_blue{
 h4.title_blue{
 	color: var(--k_dark_gray); 
 	border-left:10px solid var(--k_light_blue);
+	border-bottom:1px solid var(--k_light_gray);
+	padding-left:10px;
+	font-weight: 400;
+}
+
+h2.item_green{ 
+	//color: var(--k_light_green);  
+	border-left:15px solid var(--k_light_green);
+	padding-left:10px;
+}
+
+h4.title_green{
+	color: var(--k_dark_gray); 
+	border-left:10px solid var(--k_light_green);
 	border-bottom:1px solid var(--k_light_gray);
 	padding-left:10px;
 	font-weight: 400;
@@ -686,6 +700,7 @@ p.news_list_date{
 	opacity: 1;
 	font-size: 1.1rem;
 	justify-content: center;
+		font-family: sans-serif;
 }
 
 #logo_konishi{
@@ -704,7 +719,6 @@ p.news_list_date{
 	float:left;
     z-index: 2;
 	pointer-events: none;
-	
 }
 
 #icon_tel{
@@ -717,7 +731,6 @@ p.news_list_date{
 	float:right;
     z-index: 2;
 	pointer-events: none;
-	
 }
 
 /*===================================
@@ -739,7 +752,7 @@ p.news_list_date{
 	float:left;
 	font-size: 2rem;
 	color: var(--k_black);	
-	padding: 6px 0px 6px 10px;
+	padding: 6px 30px 6px 15px;
 	margin: 0px;
 }
 
@@ -811,6 +824,7 @@ p.news_list_date{
 		display: block;
 	}
 	#sub_menu a{
+		font-family: sans-serif;
 		line-height:  2.2rem;
 	}
 	
@@ -877,6 +891,7 @@ p.news_list_date{
 		line-height:  2.2rem;
 		font-size:0.8rem;
 		font-weight: 400;
+		font-family: sans-serif;
 	}
 
 	#footer_navi li + li {
