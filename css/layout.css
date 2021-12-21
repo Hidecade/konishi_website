@@ -1156,7 +1156,7 @@ p.footer-address{
 #title{
   position: absolute;
 	left:8%;
-	top: 8%;
+	top: 12%;
 }
 
 #title p{
@@ -1178,6 +1178,7 @@ p.footer-address{
 		font-weight: 300; 
 		font-size: clamp(5px, 4vw, 35px);
 	}
+	
 	#title p{ 
 		font-weight: 300; 
 		font-size: clamp(4px, 3vw, 18px); 
