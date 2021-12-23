@@ -12,21 +12,24 @@
 	--k_black: #505050;
 
 	--k_blue: #00A0E9;
-	--k_green: #00A95F;
+	//--k_green: #00A95F;
+	--k_green: #86b81b;
 	--k_pink: #EF888A;
 	--k_orange: #F39800;
 	--k_brown: #7d0022;
 	--k_navy: #0068b7;
 	
 	--k_light_blue: #54C3F1;
-	--k_light_green: #69BD83;
+	//--k_light_green: #69BD83;
+	--k_light_green: #aac863;
 	--k_light_pink: #EFA0A0;
 	--k_light_orange: #F9C270;
 	--k_light_brown: #a7374a;
 	--k_light_navy: #187fc4;
 	
 	--k_blue_hover: #9fd9f6;
-	--k_green_hover: #a5d4ad;
+	//--k_green_hover: #a5d4ad;
+	--k_green_hover: #c1db81;
 	--k_pink_hover: #FFc0c0;
 	--k_orange_hover: #fcd7a1;
 	--k_brown_hover: #cf737a;
