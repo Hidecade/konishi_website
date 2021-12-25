@@ -21,7 +21,7 @@
 	
 	--k_light_blue: #54C3F1;
 	--k_light_green: #69BD83;
-	//k_light_green: #aac863;
+	//--k_light_green: #aac863;
 	--k_light_pink: #EFA0A0;
 	--k_light_orange: #F9C270;
 	--k_light_brown: #a7374a;
@@ -345,6 +345,9 @@ img.img_normal{ width: 100%; display: block; }
 
 .back_blue{background-color: var(--k_light_blue);}
 .back_blue:hover{background-color: var(--k_blue_hover);}
+
+.back_navy{background-color: var(--k_light_navy);}
+.back_navy:hover{background-color: var(--k_blue_navy);}
 
 .back_orange{background-color: var(--k_light_orange);}
 .back_orange:hover{background-color: var(--k_orange_hover);}
