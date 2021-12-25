@@ -33,7 +33,7 @@
 	--k_pink_hover: #FFc0c0;
 	--k_orange_hover: #fcd7a1;
 	--k_brown_hover: #cf737a;
-	--k_light_navy: #6c9bd2;
+	--k_navy_hover: #6c9bd2;
 	
 	--k_max_width: 1280px;
 }
@@ -347,7 +347,7 @@ img.img_normal{ width: 100%; display: block; }
 .back_blue:hover{background-color: var(--k_blue_hover);}
 
 .back_navy{background-color: var(--k_light_navy);}
-.back_navy:hover{background-color: var(--k_blue_navy);}
+.back_navy:hover{background-color: var(--k_navy_hover);}
 
 .back_orange{background-color: var(--k_light_orange);}
 .back_orange:hover{background-color: var(--k_orange_hover);}
