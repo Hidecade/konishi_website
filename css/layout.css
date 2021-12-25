@@ -250,6 +250,10 @@ td.consultation_rest {
 	clear: both;
 }
 
+h4.left{
+	margin-top:15px;
+}
+
 .orange{	
 	color: var(--k_orange); 
 }
