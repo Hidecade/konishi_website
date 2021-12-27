@@ -118,16 +118,18 @@ function slideAnime(){
             });
   }
   
+
+/*
   // 画面をスクロールをしたら動かしたい場合の記述
   $(window).scroll(function (){
-    slideAnime();/* アニメーション用の関数を呼ぶ*/
+    slideAnime();
   });// ここまで画面をスクロールをしたら動かしたい場合の記述
 
   // 画面が読み込まれたらすぐに動かしたい場合の記述
   $(window).on('load', function(){
-    slideAnime();/* アニメーション用の関数を呼ぶ*/
+    slideAnime();
   });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
-
+*/
 
 
 
@@ -136,11 +138,11 @@ lightbox.option({
   'albumLabel': ' %1 / total %2 '//合計枚数中現在何枚目かというキャプションの見せ方を変更できる
 })
 
-
+/*
 // ページが読み込まれたらすぐに動かしたい場合の記述
   $(window).on('load', function(){
     $('.gallery li').addClass('flipLeft');
   });// ここまでページが読み込まれたらすぐに動かしたい場合の記述
-
+*/
 
 

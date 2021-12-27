@@ -1330,8 +1330,8 @@ h1.gallary{
 }
 
 .gallery{
-columns: 4;/*段組みの数*/
-padding:0 15px;/*ギャラリー左右に余白をつける*/
+	columns: 4;/*段組みの数*/
+	padding:0 15px;/*ギャラリー左右に余白をつける*/
 }
 
 .gallery li {
@@ -1340,9 +1340,10 @@ padding:0 15px;/*ギャラリー左右に余白をつける*/
 
 /*ギャラリー内のイメージは横幅100%にする*/
 .gallery img{
-  width:100%;
-  height:auto;
-  vertical-align: bottom;/*画像の下にできる余白を削除*/}
+  	width:100%;
+  	height:auto;
+  	vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
 
 @media only screen and (max-width: 900px) {
 	.gallery{
@@ -1364,7 +1365,7 @@ padding:0 15px;/*ギャラリー左右に余白をつける*/
 }
 
 /*画像を出現させるアニメーションCSS*/
-
+/*
 .flipLeft{
 animation-name: flipLeft;
 animation-duration:2s;
@@ -1384,6 +1385,7 @@ opacity: 0;
   opacity: 1;
   }
 }
+*/
 
 
 
