@@ -119,17 +119,16 @@ function slideAnime(){
   }
   
 
-/*
-  // 画面をスクロールをしたら動かしたい場合の記述
-  $(window).scroll(function (){
-    slideAnime();
-  });// ここまで画面をスクロールをしたら動かしたい場合の記述
 
-  // 画面が読み込まれたらすぐに動かしたい場合の記述
-  $(window).on('load', function(){
-    slideAnime();
-  });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
-*/
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function (){
+slideAnime();
+});// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+// 画面が読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function(){
+slideAnime();
+});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 
 
