@@ -348,22 +348,22 @@ img.img_normal{ width: 100%; display: block; }
 .back_gray{background-color: var(--k_gray);}
 
 .back_green{background-color: var(--k_light_green);}
-.back_green:hover{background-color: var(--k_green_hover);}
+.back_green.hover:hover{background-color: var(--k_green_hover);}
 
 .back_blue{background-color: var(--k_light_blue);}
-.back_blue:hover{background-color: var(--k_blue_hover);}
+.back_blue.hover:hover{background-color: var(--k_blue_hover);}
 
 .back_navy{background-color: var(--k_light_navy);}
-.back_navy:hover{background-color: var(--k_navy_hover);}
+.back_navy.hover:hover{background-color: var(--k_navy_hover);}
 
 .back_orange{background-color: var(--k_light_orange);}
-.back_orange:hover{background-color: var(--k_orange_hover);}
+.back_orange.hover:hover{background-color: var(--k_orange_hover);}
 
 .back_pink{background-color: var(--k_light_pink);}
-.back_pink:hover{background-color: var(--k_pink_hover);}
+.back_pink.hover:hover{background-color: var(--k_pink_hover);}
 
 .back_brown{background-color: var(--k_light_brown);}
-.back_brown:hover{background-color: var(--k_brown_hover);}
+.back_brown.hover:hover{background-color: var(--k_brown_hover);}
 
 .gray   { color: var(--k_gray  ); }
 .blue   { color: var(--k_blue  ); }
