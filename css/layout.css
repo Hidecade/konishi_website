@@ -664,43 +664,35 @@ p.news_list_date{
 
 .introduction img{ width:100%; border-radius: 0; }
 
-.intro_title{
-	width: 100%;
-	height: 44px;
-	background:linear-gradient(to right, #F89174 50%, #ffffff);
-}
 
 .intro_title_orange{
 	width: 100%;
 	height: 44px;
 	background:var(--k_light_orange);
-	//background:linear-gradient(to right, #F9C270 40%, #ffffff);
 }
 
 .intro_title_green{
 	width: 100%;
 	height: 44px;
 	background:var(--k_light_green);
-	//background:linear-gradient(to right, #69BD83 40%, #ffffff);
 }
 
 .intro_title_blue{
 	width: 100%;
 	height: 44px;
 	background:var(--k_light_blue);
-	//background:linear-gradient(to right, #54C3F1 40%, #ffffff);
 }
 
 .intro_title_orange:hover{
-	background:linear-gradient(to right, #fcd7a1 40%, #ffffff);
+	background:var(--k_orange_hover);
 }
 
 .intro_title_green:hover{
-	background:linear-gradient(to right, #a5d4ad 40%, #ffffff);
+	background:var(--k_green_hover);
 }
 
 .intro_title_blue:hover{
-	background:linear-gradient(to right, #9fd9f6 40%, #ffffff);
+	background:var(--k_blue_hover);
 }
 
 
