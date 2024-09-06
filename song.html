@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine on, New Life</title>
+    <style>        
+        /*========= フォントの設定 ===============*/
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500&display=swap');
+
+        body {
+            font-family: 'M PLUS 1p', sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* タイトルは全体の上部に表示 */
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* オーディオプレイヤーのスタイル */
+        .audio-player {
+            width: 100%;
+            max-width: 500px; /* 最大幅を500pxに設定 */
+            margin: 0 auto 20px; /* 中央寄せのためauto */
+        }
+
+        /* 画像と歌詞を横並びにする */
+        .content {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .lyrics {
+            flex: 2.0;
+            text-align: left; /* 歌詞を中央に配置 */
+            padding-left: 20px;
+        }
+
+        .title h1 {
+            font-size: 1.4rem;
+            line-height: 2.0;
+            font-weight: 300;
+            margin-top: 0;
+        }
+
+        .lyrics p {
+            font-size: 1.0rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .image-container {
+            flex: 2.5;
+            display: flex;
+            justify-content: right;
+            padding: 20px;
+        }
+
+        /* 写真のサイズを元に戻す */
+        .image-container img {
+            width: 100%; /* 元のサイズに戻す */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* 携帯では画像を一番下に配置 (縦向き) */
+        @media (max-width: 768px) and (orientation: portrait) {
+            .content {
+                flex-direction: column; /* 歌詞と画像を縦に並べる */
+            }
+
+            .image-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                padding: 0;
+            }
+
+            .image-container img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        /* iPhone横向きでは画像を歌詞の右に表示 */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .content {
+                flex-direction: row; /* 横向き時には歌詞と画像を横並びに */
+            }
+
+            .image-container {
+                padding: 20px;
+            }
+
+            .image-container img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- タイトルは全体の上部に表示 -->
+    <div class="title">
+        <h1>Shine on, New Life</h1>
+    </div>
+
+    <!-- オーディオプレイヤーを表示 -->
+    <div class="audio-player">
+        <audio controls style="width: 100%;">
+            <source src="sound/song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- 画像と歌詞を横並びに表示 -->
+    <div class="content">
+        <div class="lyrics">
+            <p>命の始まりを見守って<br>
+            五十年の旅を続けた<br>
+            笑顔と涙が交わる場で<br>
+            未来への道を築いて</p>
+
+            <p>小さな手を握りしめて<br>
+            愛の言葉を囁けば<br>
+            新しい命を迎えて<br>
+            時を越えて強くなる</p>
+
+            <p>五十年の歩みを共に<br>
+            新たな命を迎えて<br>
+            お産の歴史が紡ぐ愛<br>
+            希望の種を育てる<br>
+            Shine on, new life, shine on<br>
+            Shine on, new life, shine on</p>
+
+            <p>変わらぬ願い胸に抱き<br>
+            大地に根を下ろして生きる<br>
+            長い道のり共に歩き<br>
+            花咲く未来へ進む</p>
+
+            <p>五十年の歩みを共に<br>
+            新たな命を迎えて<br>
+            お産の歴史が紡ぐ愛<br>
+            希望の種を育てる<br>
+            Shine on, new life, shine on<br>
+            Shine on, new life, shine on</p>
+
+            <p>これからも未来へ続く<br>
+            命の光を紡いで<br>
+            こにしクリニックと共に<br>
+            新しい一歩を踏み出そう</p>
+
+            <p>涙も笑顔もすべて宝<br>
+            新しい命が繋がる時<br>
+            それぞれの道を歩みつつ<br>
+            未来への音を刻む<br>
+            Shine on, new life, shine on<br>
+            Shine on, new life, shine on</p>
+        </div>
+
+        <div class="image-container">
+            <img src="images/song.jpg" alt="Baby Image">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
